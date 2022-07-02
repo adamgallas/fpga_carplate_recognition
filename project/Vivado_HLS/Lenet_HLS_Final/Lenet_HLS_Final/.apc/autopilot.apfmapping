@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="lenet.cpp" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\src\lenet.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_image_bin_00.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_00.bin"/>
+    <originFiles name="test_image_bin_01.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_01.bin"/>
+    <originFiles name="test_image_bin_02.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_02.bin"/>
+    <originFiles name="test_image_bin_03.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_03.bin"/>
+    <originFiles name="test_image_bin_04.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_04.bin"/>
+    <originFiles name="test_image_bin_05.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_05.bin"/>
+    <originFiles name="test_image_bin_06.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_06.bin"/>
+    <originFiles name="test_image_bin_07.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_07.bin"/>
+    <originFiles name="test_image_bin_08.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_08.bin"/>
+    <originFiles name="test_image_bin_09.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_09.bin"/>
+    <originFiles name="test_image_bin_10.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_10.bin"/>
+    <originFiles name="test_image_bin_11.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_11.bin"/>
+    <originFiles name="test_image_bin_12.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_12.bin"/>
+    <originFiles name="test_image_bin_13.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_13.bin"/>
+    <originFiles name="test_image_bin_14.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_14.bin"/>
+    <originFiles name="test_image_bin_15.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_15.bin"/>
+    <originFiles name="test_image_bin_16.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_16.bin"/>
+    <originFiles name="test_image_bin_17.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_17.bin"/>
+    <originFiles name="test_image_bin_18.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_18.bin"/>
+    <originFiles name="test_image_bin_19.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_19.bin"/>
+    <originFiles name="test_image_bin_20.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_20.bin"/>
+    <originFiles name="test_image_bin_21.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_21.bin"/>
+    <originFiles name="test_image_bin_22.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_22.bin"/>
+    <originFiles name="test_image_bin_23.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_23.bin"/>
+    <originFiles name="test_image_bin_24.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_24.bin"/>
+    <originFiles name="test_image_bin_25.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_25.bin"/>
+    <originFiles name="test_image_bin_26.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_26.bin"/>
+    <originFiles name="test_image_bin_27.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_27.bin"/>
+    <originFiles name="test_image_bin_28.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_28.bin"/>
+    <originFiles name="test_image_bin_29.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_29.bin"/>
+    <originFiles name="test_image_bin_30.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_30.bin"/>
+    <originFiles name="test_image_bin_31.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_31.bin"/>
+    <originFiles name="test_image_bin_32.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_32.bin"/>
+    <originFiles name="test_image_bin_33.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_33.bin"/>
+    <originFiles name="test_image_bin_34.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_34.bin"/>
+    <originFiles name="test_image_bin_35.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_35.bin"/>
+    <originFiles name="test_image_bin_36.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_36.bin"/>
+    <originFiles name="test_image_bin_37.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_37.bin"/>
+    <originFiles name="test_image_bin_38.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_38.bin"/>
+    <originFiles name="test_image_bin_39.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_39.bin"/>
+    <originFiles name="test_image_bin_40.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_40.bin"/>
+    <originFiles name="test_image_bin_41.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_41.bin"/>
+    <originFiles name="test_image_bin_42.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_42.bin"/>
+    <originFiles name="test_image_bin_43.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_43.bin"/>
+    <originFiles name="test_image_bin_44.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_44.bin"/>
+    <originFiles name="test_image_bin_45.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_45.bin"/>
+    <originFiles name="test_image_bin_46.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_46.bin"/>
+    <originFiles name="test_image_bin_47.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_47.bin"/>
+    <originFiles name="test_image_bin_48.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_48.bin"/>
+    <originFiles name="test_image_bin_49.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_49.bin"/>
+    <originFiles name="test_image_bin_50.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_50.bin"/>
+    <originFiles name="test_image_bin_51.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_51.bin"/>
+    <originFiles name="test_image_bin_52.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_52.bin"/>
+    <originFiles name="test_image_bin_53.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_53.bin"/>
+    <originFiles name="test_image_bin_54.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_54.bin"/>
+    <originFiles name="test_image_bin_55.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_55.bin"/>
+    <originFiles name="test_image_bin_56.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_56.bin"/>
+    <originFiles name="test_image_bin_57.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_57.bin"/>
+    <originFiles name="test_image_bin_58.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_58.bin"/>
+    <originFiles name="test_image_bin_59.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_59.bin"/>
+    <originFiles name="test_image_bin_60.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_60.bin"/>
+    <originFiles name="test_image_bin_61.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_61.bin"/>
+    <originFiles name="test_image_bin_62.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_62.bin"/>
+    <originFiles name="test_image_bin_63.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_63.bin"/>
+    <originFiles name="test_image_bin_64.bin" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\test_image\test_image_bin_64.bin"/>
+    <originFiles name="test_tb.cpp" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Lenet_HLS_Final\testbench\test_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

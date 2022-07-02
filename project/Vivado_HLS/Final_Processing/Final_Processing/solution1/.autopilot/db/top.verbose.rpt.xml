@@ -1,0 +1,259 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'top'" level="0">
+<item name = "Date">Tue Aug 18 10:31:34 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Final_Processing</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">11.10 ns, 9.645 ns, 1.39 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1850301, 2139214, 20.538 ms, 23.745 ms, 929938, 2139187, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="Resize204_U0">Resize204, 50, 2139186, 0.555 us, 23.745 ms, 50, 2139186, none</column>
+<column name="Resize_U0">Resize, 50, 2139186, 0.555 us, 23.745 ms, 50, 2139186, none</column>
+<column name="MedianBlur_5_U0">MedianBlur_5, 921612, 921612, 10.230 ms, 10.230 ms, 921612, 921612, none</column>
+<column name="CvtColor_U0">CvtColor, 1, 943921, 11.100 ns, 10.478 ms, 1, 943921, none</column>
+<column name="Dilate205_U0">Dilate205, 171, 930659, 1.898 us, 10.330 ms, 171, 930659, none</column>
+<column name="Dilate206_U0">Dilate206, 171, 930659, 1.898 us, 10.330 ms, 171, 930659, none</column>
+<column name="Dilate207_U0">Dilate207, 171, 930659, 1.898 us, 10.330 ms, 171, 930659, none</column>
+<column name="Dilate_U0">Dilate, 171, 930659, 1.898 us, 10.330 ms, 171, 930659, none</column>
+<column name="Dilate203_U0">Dilate203, 171, 930659, 1.898 us, 10.330 ms, 171, 930659, none</column>
+<column name="Add_Rectangle_U0">Add_Rectangle, 923761, 923761, 10.254 ms, 10.254 ms, 923761, 923761, none</column>
+<column name="Erode_U0">Erode, 929937, 929937, 10.322 ms, 10.322 ms, 929937, 929937, none</column>
+<column name="AXIvideo2Mat_U0">AXIvideo2Mat, 3, 925203, 33.300 ns, 10.270 ms, 3, 925203, none</column>
+<column name="Loop_CACHE_LEN_proc2_U0">Loop_CACHE_LEN_proc2, 63001, 63001, 0.699 ms, 0.699 ms, 63001, 63001, none</column>
+<column name="In_Range_U0">In_Range, 924481, 924481, 10.262 ms, 10.262 ms, 924481, 924481, none</column>
+<column name="Mat2AXIvideo_U0">Mat2AXIvideo, 924481, 924481, 10.262 ms, 10.262 ms, 924481, 924481, none</column>
+<column name="CvtColor_1_U0">CvtColor_1, 1, 923761, 11.100 ns, 10.254 ms, 1, 923761, none</column>
+<column name="Duplicate_U0">Duplicate, 58141, 58141, 0.645 ms, 0.645 ms, 58141, 58141, none</column>
+<column name="Block_proc377_U0">Block_proc377, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 36, -</column>
+<column name="FIFO">0, -, 288, 1260, -</column>
+<column name="Instance">26, 34, 26987, 32958, 0</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 36, -</column>
+<column name="Register">-, -, 6, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">9, 15, 25, 64, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="AXIvideo2Mat_U0">AXIvideo2Mat, 0, 0, 365, 445, 0</column>
+<column name="Add_Rectangle_U0">Add_Rectangle, 0, 0, 428, 911, 0</column>
+<column name="Block_proc377_U0">Block_proc377, 0, 0, 3, 218, 0</column>
+<column name="CvtColor_U0">CvtColor, 0, 2, 3943, 2977, 0</column>
+<column name="CvtColor_1_U0">CvtColor_1, 0, 0, 62, 186, 0</column>
+<column name="Dilate_U0">Dilate, 3, 0, 565, 1165, 0</column>
+<column name="Dilate203_U0">Dilate203, 3, 0, 566, 1164, 0</column>
+<column name="Dilate205_U0">Dilate205, 3, 0, 564, 1156, 0</column>
+<column name="Dilate206_U0">Dilate206, 3, 0, 564, 1156, 0</column>
+<column name="Dilate207_U0">Dilate207, 3, 0, 564, 1156, 0</column>
+<column name="Duplicate_U0">Duplicate, 0, 0, 34, 169, 0</column>
+<column name="Erode_U0">Erode, 3, 0, 347, 702, 0</column>
+<column name="In_Range_U0">In_Range, 0, 0, 48, 262, 0</column>
+<column name="Loop_CACHE_LEN_proc2_U0">Loop_CACHE_LEN_proc2, 0, 0, 69, 283, 0</column>
+<column name="Mat2AXIvideo_U0">Mat2AXIvideo, 0, 0, 43, 190, 0</column>
+<column name="MedianBlur_5_U0">MedianBlur_5, 4, 0, 2028, 6562, 0</column>
+<column name="Resize_U0">Resize, 2, 16, 8303, 6980, 0</column>
+<column name="Resize204_U0">Resize204, 2, 16, 8303, 6980, 0</column>
+<column name="top_AXILiteS_s_axi_U">top_AXILiteS_s_axi, 0, 0, 188, 296, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="binary_hsv_data_stre_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="blur_binary_data_str_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="dilate1_cols_V_c_U">0, 6, 0, -, 8, 12, 96</column>
+<column name="dilate1_data_stream_s_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="dilate1_rows_V_c_U">0, 6, 0, -, 8, 11, 88</column>
+<column name="dilate_copy1_data_st_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="dilate_copy2_cols_V_s_U">0, 7, 0, -, 14, 10, 140</column>
+<column name="dilate_copy2_data_st_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="dilate_copy2_rows_V_s_U">0, 7, 0, -, 14, 9, 126</column>
+<column name="erode_blur_cols_V_c_U">0, 6, 0, -, 7, 12, 84</column>
+<column name="erode_blur_data_stre_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="erode_blur_rows_V_c_U">0, 6, 0, -, 7, 11, 77</column>
+<column name="hsv_img_data_stream_1_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="hsv_img_data_stream_2_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="hsv_img_data_stream_s_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="output_img_data_stre_1_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="output_img_data_stre_2_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="output_img_data_stre_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="output_img_rec_data_1_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="output_img_rec_data_2_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="output_img_rec_data_s_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rdilate2_cols_V_c58_U">0, 5, 0, -, 2, 10, 20</column>
+<column name="rdilate2_cols_V_c_U">0, 6, 0, -, 8, 10, 80</column>
+<column name="rdilate2_data_stream_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rdilate2_rows_V_c57_U">0, 5, 0, -, 2, 9, 18</column>
+<column name="rdilate2_rows_V_c_U">0, 6, 0, -, 8, 9, 72</column>
+<column name="rdilate3_cols_V_c_U">0, 6, 0, -, 10, 10, 100</column>
+<column name="rdilate3_data_stream_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rdilate3_rows_V_c_U">0, 6, 0, -, 10, 9, 90</column>
+<column name="rdilate4_cols_V_c_U">0, 6, 0, -, 11, 10, 110</column>
+<column name="rdilate4_data_stream_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rdilate4_rows_V_c_U">0, 6, 0, -, 11, 9, 99</column>
+<column name="rdilate5_cols_V_c_U">0, 6, 0, -, 12, 10, 120</column>
+<column name="rdilate5_data_stream_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rdilate5_rows_V_c_U">0, 6, 0, -, 12, 9, 108</column>
+<column name="rdilate6_data_stream_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="resize_dilate_cols_V_1_U">0, 7, 0, -, 14, 12, 168</column>
+<column name="resize_dilate_cols_V_U">0, 5, 0, -, 2, 12, 24</column>
+<column name="resize_dilate_data_s_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="resize_dilate_rows_V_1_U">0, 7, 0, -, 14, 11, 154</column>
+<column name="resize_dilate_rows_V_U">0, 5, 0, -, 2, 11, 22</column>
+<column name="rgb_img_cols_V_c56_U">0, 5, 0, -, 2, 12, 24</column>
+<column name="rgb_img_cols_V_c_U">0, 5, 0, -, 2, 12, 24</column>
+<column name="rgb_img_data_stream_1_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rgb_img_data_stream_2_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rgb_img_data_stream_s_U">0, 5, 0, -, 2, 8, 16</column>
+<column name="rgb_img_rows_V_c55_U">0, 5, 0, -, 2, 11, 22</column>
+<column name="rgb_img_rows_V_c_U">0, 5, 0, -, 2, 11, 22</column>
+<column name="xleft_c_U">0, 7, 0, -, 16, 32, 512</column>
+<column name="xright_c_U">0, 7, 0, -, 16, 32, 512</column>
+<column name="ydown_c_U">0, 7, 0, -, 16, 32, 512</column>
+<column name="ytop_c_U">0, 7, 0, -, 16, 32, 512</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="AXIvideo2Mat_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
+<column name="Block_proc377_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
+<column name="AXIvideo2Mat_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_proc377_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Block_proc377_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_AXIvideo2Mat_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_proc377_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="AXIvideo2Mat_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="Block_proc377_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="ap_sync_reg_AXIvideo2Mat_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Block_proc377_U0_ap_ready">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="AXIvideo2Mat_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="Block_proc377_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="ap_sync_reg_AXIvideo2Mat_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Block_proc377_U0_ap_ready">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 6, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 6, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, top, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, top, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, top, return value</column>
+<column name="buffer_V_Addr_A">out, 32, bram, buffer_V, array</column>
+<column name="buffer_V_EN_A">out, 1, bram, buffer_V, array</column>
+<column name="buffer_V_Din_A">out, 32, bram, buffer_V, array</column>
+<column name="buffer_V_Dout_A">in, 32, bram, buffer_V, array</column>
+<column name="buffer_V_WEN_A">out, 4, bram, buffer_V, array</column>
+<column name="buffer_V_Clk_A">out, 1, bram, buffer_V, array</column>
+<column name="buffer_V_Rst_A">out, 1, bram, buffer_V, array</column>
+<column name="buffer_V_Addr_B">out, 32, bram, buffer_V, array</column>
+<column name="buffer_V_EN_B">out, 1, bram, buffer_V, array</column>
+<column name="buffer_V_Din_B">out, 32, bram, buffer_V, array</column>
+<column name="buffer_V_Dout_B">in, 32, bram, buffer_V, array</column>
+<column name="buffer_V_WEN_B">out, 4, bram, buffer_V, array</column>
+<column name="buffer_V_Clk_B">out, 1, bram, buffer_V, array</column>
+<column name="buffer_V_Rst_B">out, 1, bram, buffer_V, array</column>
+<column name="video_src_TDATA">in, 32, axis, video_src_V_data_V, pointer</column>
+<column name="video_src_TKEEP">in, 4, axis, video_src_V_keep_V, pointer</column>
+<column name="video_src_TSTRB">in, 4, axis, video_src_V_strb_V, pointer</column>
+<column name="video_src_TUSER">in, 1, axis, video_src_V_user_V, pointer</column>
+<column name="video_src_TLAST">in, 1, axis, video_src_V_last_V, pointer</column>
+<column name="video_src_TID">in, 1, axis, video_src_V_id_V, pointer</column>
+<column name="video_src_TDEST">in, 1, axis, video_src_V_dest_V, pointer</column>
+<column name="video_src_TVALID">in, 1, axis, video_src_V_dest_V, pointer</column>
+<column name="video_src_TREADY">out, 1, axis, video_src_V_dest_V, pointer</column>
+<column name="video_dst_TDATA">out, 32, axis, video_dst_V_data_V, pointer</column>
+<column name="video_dst_TKEEP">out, 4, axis, video_dst_V_keep_V, pointer</column>
+<column name="video_dst_TSTRB">out, 4, axis, video_dst_V_strb_V, pointer</column>
+<column name="video_dst_TUSER">out, 1, axis, video_dst_V_user_V, pointer</column>
+<column name="video_dst_TLAST">out, 1, axis, video_dst_V_last_V, pointer</column>
+<column name="video_dst_TID">out, 1, axis, video_dst_V_id_V, pointer</column>
+<column name="video_dst_TDEST">out, 1, axis, video_dst_V_dest_V, pointer</column>
+<column name="video_dst_TVALID">out, 1, axis, video_dst_V_dest_V, pointer</column>
+<column name="video_dst_TREADY">in, 1, axis, video_dst_V_dest_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

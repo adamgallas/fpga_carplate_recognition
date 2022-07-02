@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root VersionMajor="1" VersionMinor="15">
+  <GenAppInfo Name="Vivado" Version="2019.2" CL="2708876" TimeStamp="Mon Aug 24 16:47:44 2020"/>
+  <DSA Vendor="xilinx" BoardId="zedboard" Name="" VersionMajor="0" VersionMinor="0" Description="Vivado generated Hardware Platform" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="true" DefaultOutputType="hw_export">
+    <Build UsesPR="false" PlatformState="pre_synth" AcceleratorBinaryContent="bitstream" ValidBinaryContentValues="dcp,bitstream" TopModuleName="ov_carplate_wrapper"/>
+    <Board Name="digilentinc.com:zedboard:1.0" Vendor="digilentinc.com" Part="xc7z020clg484-1" BoardPart="digilentinc.com:zedboard:part0:1.0">
+      <Images>
+        <Img Type="HDPI" File="zed_board.jpg"/>
+        <Img Type="MDPI" File=""/>
+        <Img Type="LDPI" File=""/>
+      </Images>
+    </Board>
+    <Devices>
+      <Device Name="fpga0" Type="8" FpgaDevice="zynq:xc7z020:clg484:-1">
+        <Core Name="OCL_REGION_0" Type="clc_region" ComputeUnits="60"/>
+      </Device>
+    </Devices>
+    <Files>
+      <File Type="FULL_BIT" Name="ov_carplate_wrapper.bit"/>
+    </Files>
+  </DSA>
+</Root>

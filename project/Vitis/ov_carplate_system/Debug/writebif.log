@@ -1,0 +1,54 @@
+TRACE::2020-08-24.16:58:16::SCWBifWriter::Found the complete platform D:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/ov_carplate_wrapper.xpfm
+TRACE::2020-08-24.16:58:16::SCWBifWriter::hardware databse : ov_carplate_wrapper_1
+TRACE::2020-08-24.16:58:16::SCWBifWriter::bitstream found in the design
+TRACE::2020-08-24.16:58:16::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2020-08-24.16:58:16::SCWBifWriter::proc type : 
+TRACE::2020-08-24.16:58:16::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2020-08-24.16:58:16::SCWBifWriter::Device type is : zynq
+TRACE::2020-08-24.16:58:16::SCWBifWriter::Writing BIF to file : D:/Project/Vitis_Workplace/ov_carplate_system/Debug/system.bif
+TRACE::2020-08-24.16:58:16::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2020-08-24.17:00:54::SCWBifWriter::Found the complete platform D:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/ov_carplate_wrapper.xpfm
+TRACE::2020-08-24.17:00:54::SCWBifWriter::hardware databse : ov_carplate_wrapper_1
+TRACE::2020-08-24.17:00:54::SCWBifWriter::bitstream found in the design
+TRACE::2020-08-24.17:00:54::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2020-08-24.17:00:54::SCWBifWriter::proc type : 
+TRACE::2020-08-24.17:00:54::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2020-08-24.17:00:54::SCWBifWriter::Device type is : zynq
+TRACE::2020-08-24.17:00:54::SCWBifWriter::Writing BIF to file : D:/Project/Vitis_Workplace/ov_carplate_system/Debug/system.bif
+TRACE::2020-08-24.17:00:54::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2020-08-24.17:02:30::SCWBifWriter::Found the complete platform D:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/ov_carplate_wrapper.xpfm
+TRACE::2020-08-24.17:02:30::SCWBifWriter::hardware databse : ov_carplate_wrapper_1
+TRACE::2020-08-24.17:02:30::SCWBifWriter::bitstream found in the design
+TRACE::2020-08-24.17:02:30::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2020-08-24.17:02:30::SCWBifWriter::proc type : 
+TRACE::2020-08-24.17:02:30::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2020-08-24.17:02:30::SCWBifWriter::Device type is : zynq
+TRACE::2020-08-24.17:02:30::SCWBifWriter::Writing BIF to file : D:/Project/Vitis_Workplace/ov_carplate_system/Debug/system.bif
+TRACE::2020-08-24.17:02:30::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2020-08-24.17:04:05::SCWBifWriter::Found the complete platform D:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/ov_carplate_wrapper.xpfm
+TRACE::2020-08-24.17:04:05::SCWBifWriter::hardware databse : ov_carplate_wrapper_1
+TRACE::2020-08-24.17:04:05::SCWBifWriter::bitstream found in the design
+TRACE::2020-08-24.17:04:05::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2020-08-24.17:04:05::SCWBifWriter::proc type : 
+TRACE::2020-08-24.17:04:05::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2020-08-24.17:04:05::SCWBifWriter::Device type is : zynq
+TRACE::2020-08-24.17:04:05::SCWBifWriter::Writing BIF to file : D:/Project/Vitis_Workplace/ov_carplate_system/Debug/system.bif
+TRACE::2020-08-24.17:04:05::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2020-08-25.15:20:22::SCWBifWriter::Found the complete platform D:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/ov_carplate_wrapper.xpfm
+TRACE::2020-08-25.15:20:23::SCWBifWriter::hardware databse : ov_carplate_wrapper_1
+TRACE::2020-08-25.15:20:23::SCWBifWriter::bitstream found in the design
+TRACE::2020-08-25.15:20:23::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2020-08-25.15:20:23::SCWBifWriter::proc type : 
+TRACE::2020-08-25.15:20:23::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2020-08-25.15:20:23::SCWBifWriter::Device type is : zynq
+TRACE::2020-08-25.15:20:24::SCWBifWriter::Writing BIF to file : D:/Project/Vitis_Workplace/ov_carplate_system/Debug/system.bif
+TRACE::2020-08-25.15:20:24::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2020-08-25.15:22:35::SCWBifWriter::Found the complete platform D:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/ov_carplate_wrapper.xpfm
+TRACE::2020-08-25.15:22:36::SCWBifWriter::hardware databse : ov_carplate_wrapper_1
+TRACE::2020-08-25.15:22:36::SCWBifWriter::bitstream found in the design
+TRACE::2020-08-25.15:22:36::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2020-08-25.15:22:36::SCWBifWriter::proc type : 
+TRACE::2020-08-25.15:22:36::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2020-08-25.15:22:36::SCWBifWriter::Device type is : zynq
+TRACE::2020-08-25.15:22:36::SCWBifWriter::Writing BIF to file : D:/Project/Vitis_Workplace/ov_carplate_system/Debug/system.bif
+TRACE::2020-08-25.15:22:36::SCWBifWriter::Writing the Zynq Baremetal bif 

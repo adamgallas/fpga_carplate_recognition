@@ -1,0 +1,7 @@
+/*ov_carplate_wrapper*/
+the_ROM_image:
+{
+  [bootloader]<ov_carplate_wrapper/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

@@ -1,0 +1,2714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1597717901017">
+  <ports id="1" name="buffer_V" type="PortType" originalName="buffer.V" coreName="RAM" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="1800">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="2" name="video_src_V_data_V" type="PortType" originalName="video_src.V.data.V" bitwidth="32">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="video_src_V_keep_V" type="PortType" originalName="video_src.V.keep.V" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="video_src_V_strb_V" type="PortType" originalName="video_src.V.strb.V" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="video_src_V_user_V" type="PortType" originalName="video_src.V.user.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="video_src_V_last_V" type="PortType" originalName="video_src.V.last.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="video_src_V_id_V" type="PortType" originalName="video_src.V.id.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="8" name="video_src_V_dest_V" type="PortType" originalName="video_src.V.dest.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="9" name="video_dst_V_data_V" type="PortType" originalName="video_dst.V.data.V" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="10" name="video_dst_V_keep_V" type="PortType" originalName="video_dst.V.keep.V" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="11" name="video_dst_V_strb_V" type="PortType" originalName="video_dst.V.strb.V" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="12" name="video_dst_V_user_V" type="PortType" originalName="video_dst.V.user.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="13" name="video_dst_V_last_V" type="PortType" originalName="video_dst.V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="14" name="video_dst_V_id_V" type="PortType" originalName="video_dst.V.id.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="15" name="video_dst_V_dest_V" type="PortType" originalName="video_dst.V.dest.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="16" name="xleft_s" type="PortType" originalName="xleft_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="17" name="xright_s" type="PortType" originalName="xright_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="18" name="ytop_s" type="PortType" originalName="ytop_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="19" name="ydown_s" type="PortType" originalName="ydown_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="236" source_obj="//@ports.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="238" source_obj="//@ports.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="240" source_obj="//@ports.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="242" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="298" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="299" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="300" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="303" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="305" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="308" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="309" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="310" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="311" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="313" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="314" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="315" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="316" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="317" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="318" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="319" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="320" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="321" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="322" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="323" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="326" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="327" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="328" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="329" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="330" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="331" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="332" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="333" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="334" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="335" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="336" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="337" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="338" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="339" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="342" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="343" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="344" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="345" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="346" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="347" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="348" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="349" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="352" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="353" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="354" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="355" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="358" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="359" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="362" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.61"/>
+  <edges id="363" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.61"/>
+  <edges id="366" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
+  <edges id="367" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
+  <edges id="368" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
+  <edges id="369" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
+  <edges id="372" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="373" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="374" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="375" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="376" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="377" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="378" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="379" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="382" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.64"/>
+  <edges id="383" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.64"/>
+  <edges id="384" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.64"/>
+  <edges id="385" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.64"/>
+  <edges id="388" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
+  <edges id="389" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
+  <edges id="390" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
+  <edges id="391" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
+  <edges id="394" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
+  <edges id="395" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
+  <edges id="396" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
+  <edges id="397" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
+  <edges id="400" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
+  <edges id="401" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
+  <edges id="402" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
+  <edges id="403" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
+  <edges id="406" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.68"/>
+  <edges id="407" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.68"/>
+  <edges id="408" source_obj="//@regions.0/@basic_blocks.0/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.68"/>
+  <edges id="411" source_obj="//@regions.0/@basic_blocks.0/@node_objs.69" sink_obj="//@ports.0"/>
+  <edges id="412" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.69"/>
+  <edges id="415" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="416" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="417" source_obj="//@regions.0/@basic_blocks.0/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="418" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="419" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="420" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="421" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="422" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="425" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="426" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="427" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="428" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="429" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="430" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="433" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="434" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="435" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="436" source_obj="//@regions.0/@basic_blocks.0/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="437" source_obj="//@regions.0/@basic_blocks.0/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="438" source_obj="//@regions.0/@basic_blocks.0/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="439" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="440" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="441" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="442" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="445" source_obj="//@regions.0/@basic_blocks.0/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.73"/>
+  <edges id="446" source_obj="//@regions.0/@basic_blocks.0/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.73"/>
+  <edges id="447" source_obj="//@regions.0/@basic_blocks.0/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.73"/>
+  <edges id="448" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.8"/>
+  <edges id="449" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.9"/>
+  <edges id="450" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.10"/>
+  <edges id="451" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.11"/>
+  <edges id="452" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.12"/>
+  <edges id="453" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.13"/>
+  <edges id="454" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@ports.14"/>
+  <edges id="455" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="456" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="457" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="458" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" id="1192" RegionName="top">
+    <basic_blocks id="233" name="top" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="ydown_read" originalName="ydown_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataInputObjs>ydown_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="ytop_read" originalName="ytop_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>ytop_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="xright_read" originalName="xright_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>xright_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="xleft_read" originalName="xleft_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>xleft_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="resize_dilate_cols_V" rtlName="resize_dilate_cols_V_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="resize_dilate_rows_V" rtlName="resize_dilate_rows_V_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="rdilate2_cols_V_c58" rtlName="rdilate2_cols_V_c58_U" coreName="FIFO" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="rdilate2_rows_V_c57" rtlName="rdilate2_rows_V_c57_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="rgb_img_cols_V_c56" rtlName="rgb_img_cols_V_c56_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="rgb_img_rows_V_c55" rtlName="rgb_img_rows_V_c55_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="ydown_c" lineNumber="21" fileName="top.cpp" fileDirectory=".." rtlName="ydown_c_U" coreName="FIFO" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="21" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="ytop_c" lineNumber="20" fileName="top.cpp" fileDirectory=".." rtlName="ytop_c_U" coreName="FIFO" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="20" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="xright_c" lineNumber="19" fileName="top.cpp" fileDirectory=".." rtlName="xright_c_U" coreName="FIFO" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="19" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="xleft_c" lineNumber="18" fileName="top.cpp" fileDirectory=".." rtlName="xleft_c_U" coreName="FIFO" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="18" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="resize_dilate_cols_V_1" rtlName="resize_dilate_cols_V_1_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="resize_dilate_rows_V_1" rtlName="resize_dilate_rows_V_1_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="dilate_copy2_cols_V_s" rtlName="dilate_copy2_cols_V_s_U" coreName="FIFO" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="dilate_copy2_rows_V_s" rtlName="dilate_copy2_rows_V_s_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="rdilate5_cols_V_c" rtlName="rdilate5_cols_V_c_U" coreName="FIFO" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="rdilate5_rows_V_c" rtlName="rdilate5_rows_V_c_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="rdilate4_cols_V_c" rtlName="rdilate4_cols_V_c_U" coreName="FIFO" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="rdilate4_rows_V_c" rtlName="rdilate4_rows_V_c_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="rdilate3_cols_V_c" rtlName="rdilate3_cols_V_c_U" coreName="FIFO" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="rdilate3_rows_V_c" rtlName="rdilate3_rows_V_c_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="rdilate2_cols_V_c" rtlName="rdilate2_cols_V_c_U" coreName="FIFO" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="rdilate2_rows_V_c" rtlName="rdilate2_rows_V_c_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="dilate1_cols_V_c" rtlName="dilate1_cols_V_c_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="dilate1_rows_V_c" rtlName="dilate1_rows_V_c_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="erode_blur_cols_V_c" rtlName="erode_blur_cols_V_c_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="erode_blur_rows_V_c" rtlName="erode_blur_rows_V_c_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="rgb_img_cols_V_c" rtlName="rgb_img_cols_V_c_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="rgb_img_rows_V_c" rtlName="rgb_img_rows_V_c_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="rgb_img_data_stream_s" lineNumber="25" originalName="rgb_img.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rgb_img_data_stream_s_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="25" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="rgb_img_data_stream_1" lineNumber="25" originalName="rgb_img.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="rgb_img_data_stream_1_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="25" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="rgb_img_data_stream_2" lineNumber="25" originalName="rgb_img.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="rgb_img_data_stream_2_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="25" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="hsv_img_data_stream_s" lineNumber="26" originalName="hsv_img.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="hsv_img_data_stream_s_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="26" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="hsv_img_data_stream_1" lineNumber="26" originalName="hsv_img.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="hsv_img_data_stream_1_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="26" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="hsv_img_data_stream_2" lineNumber="26" originalName="hsv_img.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="hsv_img_data_stream_2_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="26" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="binary_hsv_data_stre" lineNumber="27" originalName="binary_hsv.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="binary_hsv_data_stre_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="27" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="blur_binary_data_str" lineNumber="28" originalName="blur_binary.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="blur_binary_data_str_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="28" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="erode_blur_data_stre" lineNumber="29" originalName="erode_blur.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="erode_blur_data_stre_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="29" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="dilate1_data_stream_s" lineNumber="30" originalName="dilate1.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="dilate1_data_stream_s_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="30" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="rdilate2_data_stream" lineNumber="32" originalName="rdilate2.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rdilate2_data_stream_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="32" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="rdilate3_data_stream" lineNumber="33" originalName="rdilate3.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rdilate3_data_stream_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="33" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="rdilate4_data_stream" lineNumber="34" originalName="rdilate4.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rdilate4_data_stream_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="34" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="rdilate5_data_stream" lineNumber="35" originalName="rdilate5.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rdilate5_data_stream_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="35" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="rdilate6_data_stream" lineNumber="36" originalName="rdilate6.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rdilate6_data_stream_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="36" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="dilate_copy1_data_st" lineNumber="39" originalName="dilate_copy1.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="dilate_copy1_data_st_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="39" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="dilate_copy2_data_st" lineNumber="40" originalName="dilate_copy2.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="dilate_copy2_data_st_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="40" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="resize_dilate_data_s" lineNumber="42" originalName="resize_dilate.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="resize_dilate_data_s_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="42" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="output_img_data_stre" lineNumber="43" originalName="output_img.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_data_stre_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="43" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="output_img_data_stre_1" lineNumber="43" originalName="output_img.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_data_stre_1_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="43" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="output_img_data_stre_2" lineNumber="43" originalName="output_img.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_data_stre_2_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="43" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="output_img_rec_data_s" lineNumber="44" originalName="output_img_rec.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_rec_data_s_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="44" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="output_img_rec_data_1" lineNumber="44" originalName="output_img_rec.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_rec_data_1_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="44" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="output_img_rec_data_2" lineNumber="44" originalName="output_img_rec.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_rec_data_2_U" coreName="FIFO" contextFuncName="top" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="44" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="202" name="_ln18" lineNumber="18" fileName="top.cpp" fileDirectory=".." rtlName="Block_proc377_U0" contextFuncName="top" opcode="call" m_display="0" m_delay="3.63" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="18" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Block_proc377</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="_ln48" lineNumber="48" fileName="top.cpp" fileDirectory=".." rtlName="AXIvideo2Mat_U0" contextFuncName="top" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="48" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>video_src_V_data_V</dataInputObjs>
+        <dataInputObjs>video_src_V_keep_V</dataInputObjs>
+        <dataInputObjs>video_src_V_strb_V</dataInputObjs>
+        <dataInputObjs>video_src_V_user_V</dataInputObjs>
+        <dataInputObjs>video_src_V_last_V</dataInputObjs>
+        <dataInputObjs>video_src_V_id_V</dataInputObjs>
+        <dataInputObjs>video_src_V_dest_V</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>AXIvideo2Mat</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="208" name="_ln49" lineNumber="49" fileName="top.cpp" fileDirectory=".." rtlName="CvtColor_U0" contextFuncName="top" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="49" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>CvtColor</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="209" name="_ln50" lineNumber="50" fileName="top.cpp" fileDirectory=".." rtlName="In_Range_U0" contextFuncName="top" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="50" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>In_Range</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="210" name="_ln51" lineNumber="51" fileName="top.cpp" fileDirectory=".." rtlName="MedianBlur_5_U0" contextFuncName="top" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="51" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>MedianBlur_5</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="211" name="_ln52" lineNumber="52" fileName="top.cpp" fileDirectory=".." rtlName="Erode_U0" contextFuncName="top" opcode="call" nodeLabel="9.0" nodeLatency="1" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="52" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Erode</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="212" name="_ln53" lineNumber="53" fileName="top.cpp" fileDirectory=".." rtlName="Dilate203_U0" contextFuncName="top" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="53" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Dilate203</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="217" name="_ln54" lineNumber="54" fileName="top.cpp" fileDirectory=".." rtlName="Resize204_U0" contextFuncName="top" opcode="call" nodeLabel="13.0" nodeLatency="1" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="54" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Resize204</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="218" name="_ln55" lineNumber="55" fileName="top.cpp" fileDirectory=".." rtlName="Dilate205_U0" contextFuncName="top" opcode="call" nodeLabel="15.0" nodeLatency="1" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="55" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Dilate205</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="219" name="_ln56" lineNumber="56" fileName="top.cpp" fileDirectory=".." rtlName="Dilate206_U0" contextFuncName="top" opcode="call" nodeLabel="17.0" nodeLatency="1" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="56" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Dilate206</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="220" name="_ln57" lineNumber="57" fileName="top.cpp" fileDirectory=".." rtlName="Dilate207_U0" contextFuncName="top" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="57" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Dilate207</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="221" name="_ln58" lineNumber="58" fileName="top.cpp" fileDirectory=".." rtlName="Dilate_U0" contextFuncName="top" opcode="call" nodeLabel="21.0" nodeLatency="1" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="58" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Dilate</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="222" name="_ln60" lineNumber="60" fileName="top.cpp" fileDirectory=".." rtlName="Duplicate_U0" contextFuncName="top" opcode="call" nodeLabel="23.0" nodeLatency="1" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="60" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Duplicate</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="223" name="_ln0" rtlName="Loop_CACHE_LEN_proc2_U0" opcode="call" nodeLabel="25.0" nodeLatency="1" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>buffer_V</dataOutputObjs>
+        <constName>Loop_CACHE_LEN_proc2</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="228" name="_ln76" lineNumber="76" fileName="top.cpp" fileDirectory=".." rtlName="Resize_U0" contextFuncName="top" opcode="call" nodeLabel="25.0" nodeLatency="1" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="76" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Resize</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="229" name="_ln78" lineNumber="78" fileName="top.cpp" fileDirectory=".." rtlName="CvtColor_1_U0" contextFuncName="top" opcode="call" nodeLabel="27.0" nodeLatency="1" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="78" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>CvtColor_1</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="230" name="_ln79" lineNumber="79" fileName="top.cpp" fileDirectory=".." rtlName="Add_Rectangle_U0" contextFuncName="top" opcode="call" nodeLabel="29.0" nodeLatency="1" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="79" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Add_Rectangle</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="231" name="_ln80" lineNumber="80" fileName="top.cpp" fileDirectory=".." rtlName="Mat2AXIvideo_U0" contextFuncName="top" opcode="call" nodeLabel="31.0" nodeLatency="1" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="80" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>video_dst_V_data_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_user_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_last_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_id_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_dest_V</dataOutputObjs>
+        <constName>Mat2AXIvideo</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="232" name="_ln81" lineNumber="81" fileName="top.cpp" fileDirectory=".." contextFuncName="top" opcode="ret" nodeLabel="33.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="81" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing" functionName="top"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="top.cpp">
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>20</validLinenumbers>
+        <validLinenumbers>19</validLinenumbers>
+        <validLinenumbers>18</validLinenumbers>
+        <validLinenumbers>25</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
+        <validLinenumbers>27</validLinenumbers>
+        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>29</validLinenumbers>
+        <validLinenumbers>30</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
+        <validLinenumbers>33</validLinenumbers>
+        <validLinenumbers>34</validLinenumbers>
+        <validLinenumbers>35</validLinenumbers>
+        <validLinenumbers>36</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
+        <validLinenumbers>44</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
+        <validLinenumbers>49</validLinenumbers>
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>51</validLinenumbers>
+        <validLinenumbers>52</validLinenumbers>
+        <validLinenumbers>53</validLinenumbers>
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>56</validLinenumbers>
+        <validLinenumbers>57</validLinenumbers>
+        <validLinenumbers>58</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+        <validLinenumbers>76</validLinenumbers>
+        <validLinenumbers>78</validLinenumbers>
+        <validLinenumbers>79</validLinenumbers>
+        <validLinenumbers>80</validLinenumbers>
+        <validLinenumbers>81</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <regnodes realName="hsv_img_data_stream_1_reg_1610">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate3_data_stream_reg_1652">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate6_data_stream_reg_1670">
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_cols_V_c56_reg_1442">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="resize_dilate_data_s_reg_1688">
+    <nodeIds>129</nodeIds>
+  </regnodes>
+  <regnodes realName="ydown_c_reg_1454">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate5_rows_V_c_reg_1508">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="xright_c_reg_1466">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate2_rows_V_c57_reg_1436">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate4_cols_V_c_reg_1514">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate_copy2_rows_V_s_reg_1496">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="resize_dilate_cols_V_reg_1418">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate1_rows_V_c_reg_1556">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate_copy1_data_st_reg_1676">
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate4_data_stream_reg_1658">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="ytop_c_reg_1460">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="resize_dilate_rows_V_1_reg_1484">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate2_data_stream_reg_1646">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_data_stream_2_reg_1598">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="binary_hsv_data_stre_reg_1622">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_data_stream_s_reg_1586">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="erode_blur_data_stre_reg_1634">
+    <nodeIds>102</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate4_rows_V_c_reg_1520">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_rows_V_c_reg_1580">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate2_cols_V_c_reg_1538">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_data_stre_1_reg_1700">
+    <nodeIds>135</nodeIds>
+  </regnodes>
+  <regnodes realName="erode_blur_cols_V_c_reg_1562">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="erode_blur_rows_V_c_reg_1568">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate5_data_stream_reg_1664">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_data_stream_1_reg_1592">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate1_data_stream_s_reg_1640">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="resize_dilate_rows_V_reg_1424">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_cols_V_c_reg_1574">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_rows_V_c55_reg_1448">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="blur_binary_data_str_reg_1628">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_data_stre_reg_1694">
+    <nodeIds>132</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_rec_data_2_reg_1724">
+    <nodeIds>147</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate3_rows_V_c_reg_1532">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="xleft_c_reg_1472">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_rec_data_1_reg_1718">
+    <nodeIds>144</nodeIds>
+  </regnodes>
+  <regnodes realName="hsv_img_data_stream_2_reg_1616">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="resize_dilate_cols_V_1_reg_1478">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_data_stre_2_reg_1706">
+    <nodeIds>138</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate5_cols_V_c_reg_1502">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate_copy2_cols_V_s_reg_1490">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate1_cols_V_c_reg_1550">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate2_rows_V_c_reg_1544">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_rec_data_s_reg_1712">
+    <nodeIds>141</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate3_cols_V_c_reg_1526">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="rdilate2_cols_V_c58_reg_1430">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="dilate_copy2_data_st_reg_1682">
+    <nodeIds>126</nodeIds>
+  </regnodes>
+  <regnodes realName="hsv_img_data_stream_s_reg_1604">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <expressionNodes realName="output_img_data_stre_2_fu_1156">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate2_rows_V_c_fu_1048">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate4_data_stream_fu_1124">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate3_rows_V_c_fu_1040">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate4_cols_V_c_fu_1028">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="resize_dilate_cols_V_fu_964">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate_copy2_data_st_fu_1140">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate_copy2_rows_V_s_fu_1016">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate3_data_stream_fu_1120">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_cols_V_c_fu_1068">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="hsv_img_data_stream_2_fu_1096">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate_copy1_data_st_fu_1136">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate4_rows_V_c_fu_1032">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate1_rows_V_c_fu_1056">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="resize_dilate_cols_V_1_fu_1004">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate5_rows_V_c_fu_1024">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xright_c_fu_996">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate5_data_stream_fu_1128">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate6_data_stream_fu_1132">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate_copy2_cols_V_s_fu_1012">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_rec_data_1_fu_1164">
+    <nodeIds>144</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="resize_dilate_rows_V_fu_968">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_data_stream_s_fu_1076">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_rec_data_s_fu_1160">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xleft_c_fu_1000">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate2_data_stream_fu_1116">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate5_cols_V_c_fu_1020">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="binary_hsv_data_stre_fu_1100">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_data_stream_2_fu_1084">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_data_stre_1_fu_1152">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="blur_binary_data_str_fu_1104">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="resize_dilate_rows_V_1_fu_1008">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_cols_V_c56_fu_980">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_rows_V_c55_fu_984">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate1_data_stream_s_fu_1112">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="hsv_img_data_stream_s_fu_1088">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="hsv_img_data_stream_1_fu_1092">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="erode_blur_data_stre_fu_1108">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="erode_blur_cols_V_c_fu_1060">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dilate1_cols_V_c_fu_1052">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="erode_blur_rows_V_c_fu_1064">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="resize_dilate_data_s_fu_1144">
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_rec_data_2_fu_1168">
+    <nodeIds>147</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_rows_V_c_fu_1072">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate2_cols_V_c_fu_1044">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ytop_c_fu_992">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_data_stre_fu_1148">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ydown_c_fu_988">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate2_rows_V_c57_fu_976">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_data_stream_1_fu_1080">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate2_cols_V_c58_fu_972">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rdilate3_cols_V_c_fu_1036">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_Dilate203_fu_1278">
+    <nodeIds>212</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Duplicate_fu_1377">
+    <nodeIds>222</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_CvtColor_1_fu_1367">
+    <nodeIds>229</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_CvtColor_fu_1234">
+    <nodeIds>208</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Resize_fu_1208">
+    <nodeIds>228</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Add_Rectangle_fu_1286">
+    <nodeIds>230</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Dilate206_fu_1254">
+    <nodeIds>219</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Dilate205_fu_1246">
+    <nodeIds>218</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_AXIvideo2Mat_fu_1306">
+    <nodeIds>207</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Dilate_fu_1270">
+    <nodeIds>221</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln18_Block_proc377_fu_1384">
+    <nodeIds>202</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_MedianBlur_5_fu_1220">
+    <nodeIds>210</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Dilate207_fu_1262">
+    <nodeIds>220</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_In_Range_fu_1338">
+    <nodeIds>209</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Resize204_fu_1196">
+    <nodeIds>217</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_CACHE_LEN_proc2_fu_1331">
+    <nodeIds>223</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Erode_fu_1300">
+    <nodeIds>211</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Mat2AXIvideo_fu_1346">
+    <nodeIds>231</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="ytop_read_read_fu_1178">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="xleft_read_read_fu_1190">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ydown_read_read_fu_1172">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="xright_read_read_fu_1184">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="line_buffer_1" portID="100">
+    <nodeIds>210</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="line_buffer_2" portID="100">
+    <nodeIds>210</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="line_buffer_3" portID="100">
+    <nodeIds>210</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="line_buffer_4" portID="100">
+    <nodeIds>210</nodeIds>
+  </memoryPorts>
+  <ioPorts name="video_dst_V_data_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_dest_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_id_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_keep_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_last_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_strb_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_user_V">
+    <contents name="call">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_data_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_dest_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_id_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_keep_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_last_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_strb_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_user_V">
+    <contents name="call">
+      <nodeIds>207</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="xleft_s">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="xright_s">
+    <contents name="read">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ydown_s">
+    <contents name="read">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ytop_s">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="202" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="207" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="207" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="208" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="208" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="209" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="209" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="210" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="210" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="211" stage="2" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="211" stage="1" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="212" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="212" stage="1" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="217" stage="2" latency="2"/>
+    </states>
+    <states id="15">
+      <operations id="217" stage="1" latency="2"/>
+    </states>
+    <states id="16">
+      <operations id="218" stage="2" latency="2"/>
+    </states>
+    <states id="17">
+      <operations id="218" stage="1" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="219" stage="2" latency="2"/>
+    </states>
+    <states id="19">
+      <operations id="219" stage="1" latency="2"/>
+    </states>
+    <states id="20">
+      <operations id="220" stage="2" latency="2"/>
+    </states>
+    <states id="21">
+      <operations id="220" stage="1" latency="2"/>
+    </states>
+    <states id="22">
+      <operations id="221" stage="2" latency="2"/>
+    </states>
+    <states id="23">
+      <operations id="221" stage="1" latency="2"/>
+    </states>
+    <states id="24">
+      <operations id="222" stage="2" latency="2"/>
+    </states>
+    <states id="25">
+      <operations id="222" stage="1" latency="2"/>
+    </states>
+    <states id="26">
+      <operations id="223" stage="2" latency="2"/>
+      <operations id="228" stage="2" latency="2"/>
+    </states>
+    <states id="27">
+      <operations id="223" stage="1" latency="2"/>
+      <operations id="228" stage="1" latency="2"/>
+    </states>
+    <states id="28">
+      <operations id="229" stage="2" latency="2"/>
+    </states>
+    <states id="29">
+      <operations id="229" stage="1" latency="2"/>
+    </states>
+    <states id="30">
+      <operations id="230" stage="2" latency="2"/>
+    </states>
+    <states id="31">
+      <operations id="230" stage="1" latency="2"/>
+    </states>
+    <states id="32">
+      <operations id="231" stage="2" latency="2"/>
+    </states>
+    <states id="33">
+      <operations id="231" stage="1" latency="2"/>
+    </states>
+    <states id="34">
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="173" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="182" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="1" latency="1"/>
+      <operations id="186" stage="1" latency="1"/>
+      <operations id="187" stage="1" latency="1"/>
+      <operations id="188" stage="1" latency="1"/>
+      <operations id="189" stage="1" latency="1"/>
+      <operations id="190" stage="1" latency="1"/>
+      <operations id="191" stage="1" latency="1"/>
+      <operations id="192" stage="1" latency="1"/>
+      <operations id="193" stage="1" latency="1"/>
+      <operations id="194" stage="1" latency="1"/>
+      <operations id="195" stage="1" latency="1"/>
+      <operations id="196" stage="1" latency="1"/>
+      <operations id="197" stage="1" latency="1"/>
+      <operations id="198" stage="1" latency="1"/>
+      <operations id="199" stage="1" latency="1"/>
+      <operations id="200" stage="1" latency="1"/>
+      <operations id="201" stage="1" latency="1"/>
+      <operations id="203" stage="1" latency="1"/>
+      <operations id="204" stage="1" latency="1"/>
+      <operations id="205" stage="1" latency="1"/>
+      <operations id="206" stage="1" latency="1"/>
+      <operations id="213" stage="1" latency="1"/>
+      <operations id="214" stage="1" latency="1"/>
+      <operations id="215" stage="1" latency="1"/>
+      <operations id="216" stage="1" latency="1"/>
+      <operations id="224" stage="1" latency="1"/>
+      <operations id="225" stage="1" latency="1"/>
+      <operations id="226" stage="1" latency="1"/>
+      <operations id="227" stage="1" latency="1"/>
+      <operations id="232" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="top" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1850301" mMaxLatency="2139214" mIsDfPipe="true">
+      <basicBlocks>233</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.2/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.3/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.4/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.5/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.6/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.7/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.8/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.9/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.10/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.11/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.12/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.13/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.14/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.15/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.16/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.17/@pins.0/@inst">
+        <processe_list name="Block_proc377_U0" ssdmobj_id="202">
+          <pins>
+            <port name="xleft_s" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="xright_s" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="ytop_s" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="ydown_s" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rgb_img_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rgb_img_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="erode_blur_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="erode_blur_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="dilate1_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="dilate1_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate2_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate2_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate3_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate3_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate4_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate4_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate5_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="rdilate5_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="dilate_copy2_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="dilate_copy2_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="resize_dilate_rows_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="resize_dilate_cols_V_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="xleft_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="xright_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="ytop_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+          <pins>
+            <port name="ydown_out" type="BUSType"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </pins>
+        </processe_list>
+        <processe_list name="AXIvideo2Mat_U0" ssdmobj_id="207">
+          <pins>
+            <port name="AXI_video_strm_V_data_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_keep_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_strb_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_user_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_last_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_id_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_dest_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_rows_V"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_cols_V"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_0_V" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_1_V" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_2_V" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_rows_V_out" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+          <pins>
+            <port name="img_cols_V_out" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </pins>
+        </processe_list>
+        <processe_list name="CvtColor_U0" ssdmobj_id="208">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_0_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_1_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_2_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_0_V" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_1_V" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_2_V" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </pins>
+        </processe_list>
+        <processe_list name="In_Range_U0" ssdmobj_id="209">
+          <pins>
+            <port name="src_data_stream_0_V"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_1_V"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_2_V"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_V" type="BUSType"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </pins>
+        </processe_list>
+        <processe_list name="MedianBlur_5_U0" ssdmobj_id="210">
+          <pins>
+            <port name="src_data_stream_V"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_V" type="BUSType"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </pins>
+          <pins>
+            <port name="line_buffer_1" dir="DirInOut" type="MEMType"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </pins>
+          <pins>
+            <port name="line_buffer_2" dir="DirInOut" type="MEMType"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </pins>
+          <pins>
+            <port name="line_buffer_3" dir="DirInOut" type="MEMType"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </pins>
+          <pins>
+            <port name="line_buffer_4" dir="DirInOut" type="MEMType"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Erode_U0" ssdmobj_id="211">
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Erode_U0" ssdmobj_id="211" object_id="_477"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Erode_U0" ssdmobj_id="211" object_id="_477"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Dilate203_U0" ssdmobj_id="212">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Resize204_U0" ssdmobj_id="217">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_dst_rows_V"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_dst_cols_V"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_dst_rows_V_out" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+          <pins>
+            <port name="p_dst_cols_V_out" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Dilate205_U0" ssdmobj_id="218">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Dilate206_U0" ssdmobj_id="219">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Dilate207_U0" ssdmobj_id="220">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Dilate_U0" ssdmobj_id="221">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Duplicate_U0" ssdmobj_id="222">
+          <pins>
+            <port name="src_data_stream_V"/>
+            <inst name="Duplicate_U0" ssdmobj_id="222" object_id="_551"/>
+          </pins>
+          <pins>
+            <port name="dst1_data_stream_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="222" object_id="_551"/>
+          </pins>
+          <pins>
+            <port name="dst2_data_stream_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="222" object_id="_551"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Loop_CACHE_LEN_proc2_U0" ssdmobj_id="223">
+          <pins>
+            <port name="buffer_V" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_CACHE_LEN_proc2_U0" ssdmobj_id="223" object_id="_559"/>
+          </pins>
+          <pins>
+            <port name="dilate_copy1_data_stream_0_V"/>
+            <inst name="Loop_CACHE_LEN_proc2_U0" ssdmobj_id="223" object_id="_559"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Resize_U0" ssdmobj_id="228">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_dst_rows_V"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_dst_cols_V"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_dst_rows_V_out" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+          <pins>
+            <port name="p_dst_cols_V_out" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </pins>
+        </processe_list>
+        <processe_list name="CvtColor_1_U0" ssdmobj_id="229">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_V"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_0_V" type="BUSType"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_1_V" type="BUSType"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_2_V" type="BUSType"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Add_Rectangle_U0" ssdmobj_id="230">
+          <pins>
+            <port name="src_data_stream_0_V"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_1_V"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_2_V"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_0_V" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_1_V" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_2_V" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="xleft"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="xright"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="ytop"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+          <pins>
+            <port name="ydown"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Mat2AXIvideo_U0" ssdmobj_id="231">
+          <pins>
+            <port name="img_data_stream_0_V"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_1_V"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_2_V"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_data_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_keep_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_strb_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_user_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_last_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_id_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_dest_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="2" bitwidth="11" name="rgb_img_rows_V_c" ssdmobj_id="56">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="12" name="rgb_img_cols_V_c" ssdmobj_id="55">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="7" bitwidth="11" name="erode_blur_rows_V_c" ssdmobj_id="54">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="7" bitwidth="12" name="erode_blur_cols_V_c" ssdmobj_id="53">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="11" name="dilate1_rows_V_c" ssdmobj_id="52">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="12" name="dilate1_cols_V_c" ssdmobj_id="51">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="9" name="rdilate2_rows_V_c" ssdmobj_id="50">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="10" name="rdilate2_cols_V_c" ssdmobj_id="49">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="10" bitwidth="9" name="rdilate3_rows_V_c" ssdmobj_id="48">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="10" bitwidth="10" name="rdilate3_cols_V_c" ssdmobj_id="47">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="11" bitwidth="9" name="rdilate4_rows_V_c" ssdmobj_id="46">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="11" bitwidth="10" name="rdilate4_cols_V_c" ssdmobj_id="45">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="12" bitwidth="9" name="rdilate5_rows_V_c" ssdmobj_id="44">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="12" bitwidth="10" name="rdilate5_cols_V_c" ssdmobj_id="43">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="14" bitwidth="9" name="dilate_copy2_rows_V_s" ssdmobj_id="42">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="14" bitwidth="10" name="dilate_copy2_cols_V_s" ssdmobj_id="41">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="14" bitwidth="11" name="resize_dilate_rows_V_1" ssdmobj_id="40">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="14" bitwidth="12" name="resize_dilate_cols_V_1" ssdmobj_id="39">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="16" bitwidth="32" name="xleft_c" ssdmobj_id="38">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="16" bitwidth="32" name="xright_c" ssdmobj_id="37">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="16" bitwidth="32" name="ytop_c" ssdmobj_id="36">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="16" bitwidth="32" name="ydown_c" ssdmobj_id="35">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_proc377_U0" ssdmobj_id="202" object_id="_351"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rgb_img_data_stream_s" ssdmobj_id="78">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rgb_img_data_stream_1" ssdmobj_id="81">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rgb_img_data_stream_2" ssdmobj_id="84">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="11" name="rgb_img_rows_V_c55" ssdmobj_id="34">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="12" name="rgb_img_cols_V_c56" ssdmobj_id="33">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="207" object_id="_405"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="hsv_img_data_stream_s" ssdmobj_id="87">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="hsv_img_data_stream_1" ssdmobj_id="90">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="hsv_img_data_stream_2" ssdmobj_id="93">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_U0" ssdmobj_id="208" object_id="_435"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="binary_hsv_data_stre" ssdmobj_id="96">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="In_Range_U0" ssdmobj_id="209" object_id="_453"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="blur_binary_data_str" ssdmobj_id="99">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="MedianBlur_5_U0" ssdmobj_id="210" object_id="_463"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Erode_U0" ssdmobj_id="211" object_id="_477"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="erode_blur_data_stre" ssdmobj_id="102">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Erode_U0" ssdmobj_id="211" object_id="_477"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="dilate1_data_stream_s" ssdmobj_id="105">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Dilate203_U0" ssdmobj_id="212" object_id="_483"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rdilate2_data_stream" ssdmobj_id="108">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="9" name="rdilate2_rows_V_c57" ssdmobj_id="32">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="10" name="rdilate2_cols_V_c58" ssdmobj_id="31">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize204_U0" ssdmobj_id="217" object_id="_493"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rdilate3_data_stream" ssdmobj_id="111">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Dilate205_U0" ssdmobj_id="218" object_id="_511"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rdilate4_data_stream" ssdmobj_id="114">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Dilate206_U0" ssdmobj_id="219" object_id="_521"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rdilate5_data_stream" ssdmobj_id="117">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Dilate207_U0" ssdmobj_id="220" object_id="_531"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rdilate6_data_stream" ssdmobj_id="120">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Dilate_U0" ssdmobj_id="221" object_id="_541"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="222" object_id="_551"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="dilate_copy1_data_st" ssdmobj_id="123">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="222" object_id="_551"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_CACHE_LEN_proc2_U0" ssdmobj_id="223" object_id="_559"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="dilate_copy2_data_st" ssdmobj_id="126">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="222" object_id="_551"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="resize_dilate_data_s" ssdmobj_id="129">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="11" name="resize_dilate_rows_V" ssdmobj_id="30">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="12" name="resize_dilate_cols_V" ssdmobj_id="29">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="228" object_id="_565"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_data_stre" ssdmobj_id="132">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_data_stre_1" ssdmobj_id="135">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_data_stre_2" ssdmobj_id="138">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_1_U0" ssdmobj_id="229" object_id="_583"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_rec_data_s" ssdmobj_id="141">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_rec_data_1" ssdmobj_id="144">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_rec_data_2" ssdmobj_id="147">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="230" object_id="_597"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="231" object_id="_619"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

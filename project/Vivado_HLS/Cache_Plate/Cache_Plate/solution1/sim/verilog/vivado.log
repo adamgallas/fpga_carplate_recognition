@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Aug 18 17:05:24 2020
+# Process ID: 6280
+# Current directory: D:/ADAM_GALLAS/materials/01_Vivado_HLS/Cache_Plate/Cache_Plate/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/ADAM_GALLAS/materials/01_Vivado_HLS/Cache_Plate/Cache_Plate/solution1/sim/verilog/vivado.log
+# Journal file: D:/ADAM_GALLAS/materials/01_Vivado_HLS/Cache_Plate/Cache_Plate/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Program_Files/Xilinx/Vivado/2019.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 857.984 ; gain = 236.961
+# open_wave_database box.wdb
+open_wave_config D:/ADAM_GALLAS/materials/01_Vivado_HLS/Cache_Plate/Cache_Plate/solution1/sim/verilog/box.wcfg
+open_wave_config: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 870.059 ; gain = 0.000
+open_wave_database: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 870.840 ; gain = 7.281
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 18 18:00:10 2020...

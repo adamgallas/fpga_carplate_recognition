@@ -1,0 +1,1633 @@
+
+*** Running vivado
+    with args -log ov_carplate_Lenet_HLS_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov_carplate_Lenet_HLS_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ov_carplate_Lenet_HLS_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:45 . Memory (MB): peak = 464.160 ; gain = 171.016
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/ov_carplate/Vivado/ip_hdmi_driver'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/ov_carplate/Vivado/ip_hls_box'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/ov_carplate/Vivado/ip_hls_lenet'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/ov_carplate/Vivado/ip_hls_top'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Program_Files/Xilinx/Vivado/2019.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 488.988 ; gain = 24.828
+Command: synth_design -top ov_carplate_Lenet_HLS_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4128 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 1027.316 ; gain = 235.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ov_carplate_Lenet_HLS_0_0' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ip/ov_carplate_Lenet_HLS_0_0/synth/ov_carplate_Lenet_HLS_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 63'b000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 63'b000000000000000000000000000000000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 63'b000000000000000000000000000000000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 63'b000000000000000000000000000000000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 63'b000000000000000000000000000000000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 63'b000000000000000000000000000000000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 63'b000000000000000000000000000000000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 63'b000000000000000000000000000000000000000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 63'b000000000000000000000000000000000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 63'b000000000000000000000000000000000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 63'b000000000000000000000000000000000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 63'b000000000000000000000000000000000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 63'b000000000000000000000000000000000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 63'b000000000000000000000000000000000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 63'b000000000000000000000000000000000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 63'b000000000000000000000000000000000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 63'b000000000000000000000000000000000000000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 63'b000000000000000000000000000000000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 63'b000000000000000000000000000000000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 63'b000000000000000000000000000000000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 63'b000000000000000000000000000000000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 63'b000000000000000000000000000000000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 63'b000000000000000000000000000000000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 63'b000000000000000000000000000000000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 63'b000000000000000000000000000000000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 63'b000000000000000000000000000000000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 63'b000000000000000000000000000000000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 63'b000000000000000000000000000000000001000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 63'b000000000000000000000000000000000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 63'b000000000000000000000000000000000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 63'b000000000000000000000000000000001000000000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 63'b000000000000000000000000000000010000000000000000000000000000000 
+	Parameter ap_ST_fsm_state33 bound to: 63'b000000000000000000000000000000100000000000000000000000000000000 
+	Parameter ap_ST_fsm_state34 bound to: 63'b000000000000000000000000000001000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state35 bound to: 63'b000000000000000000000000000010000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 63'b000000000000000000000000000100000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state37 bound to: 63'b000000000000000000000000001000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state38 bound to: 63'b000000000000000000000000010000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state39 bound to: 63'b000000000000000000000000100000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state40 bound to: 63'b000000000000000000000001000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state41 bound to: 63'b000000000000000000000010000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state42 bound to: 63'b000000000000000000000100000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state43 bound to: 63'b000000000000000000001000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state44 bound to: 63'b000000000000000000010000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state45 bound to: 63'b000000000000000000100000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state46 bound to: 63'b000000000000000001000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state47 bound to: 63'b000000000000000010000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state48 bound to: 63'b000000000000000100000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state49 bound to: 63'b000000000000001000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state50 bound to: 63'b000000000000010000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state51 bound to: 63'b000000000000100000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state52 bound to: 63'b000000000001000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state53 bound to: 63'b000000000010000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state54 bound to: 63'b000000000100000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state55 bound to: 63'b000000001000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state56 bound to: 63'b000000010000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state57 bound to: 63'b000000100000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state58 bound to: 63'b000001000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state59 bound to: 63'b000010000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state60 bound to: 63'b000100000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state61 bound to: 63'b001000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state62 bound to: 63'b010000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state63 bound to: 63'b100000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:150]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer1_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer1_V.v:40]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer1_V_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer1_V.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer1_V.v:19]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_layer1_V_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer1_V.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer1_V_ram' (1#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer1_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer1_V' (2#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer1_V.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer2_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer2_V.v:51]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 4704 - type: integer 
+	Parameter AddressWidth bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer2_V_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer2_V.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 13 - type: integer 
+	Parameter MEM_SIZE bound to: 4704 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer2_V.v:22]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_layer2_V_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer2_V.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer2_V_ram' (3#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer2_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer2_V' (4#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer2_V.v:51]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer3_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer3_V.v:40]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 1176 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer3_V_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer3_V.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1176 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer3_V.v:19]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_layer3_V_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer3_V.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer3_V_ram' (5#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer3_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer3_V' (6#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer3_V.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer4_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer4_V.v:51]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 1600 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer4_V_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer4_V.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1600 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer4_V.v:22]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_layer4_V_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer4_V.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer4_V_ram' (7#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer4_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer4_V' (8#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer4_V.v:51]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer5_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer5_V.v:40]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 400 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_layer5_V_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer5_V.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 400 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer5_V.v:19]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_layer5_V_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer5_V.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer5_V_ram' (9#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer5_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_layer5_V' (10#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_layer5_V.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_flattenlbW' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenlbW.v:40]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 84 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_flattenlbW_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenlbW.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 84 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenlbW.v:19]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_flattenlbW_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenlbW.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_flattenlbW_ram' (11#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenlbW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_flattenlbW' (12#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenlbW.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_flattenmb6' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenmb6.v:40]
+	Parameter DataWidth bound to: 12 - type: integer 
+	Parameter AddressRange bound to: 65 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_flattenmb6_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenmb6.v:6]
+	Parameter DWIDTH bound to: 12 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 65 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenmb6.v:19]
+INFO: [Synth 8-3876] $readmem data file './Lenet_HLS_flattenmb6_ram.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenmb6.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_flattenmb6_ram' (13#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenmb6.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_flattenmb6' (14#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_flattenmb6.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_AXILiteS_s_axi' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_AP_RETURN_0 bound to: 5'b10000 
+	Parameter ADDR_ID_DATA_0 bound to: 5'b11000 
+	Parameter ADDR_ID_CTRL bound to: 5'b11100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_AXILiteS_s_axi.v:196]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_AXILiteS_s_axi' (15#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_data_buncg' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_data_buncg.v:37]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_data_buncg_ram' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_data_buncg.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_data_buncg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_data_buncg_ram' (16#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_data_buncg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_data_buncg' (17#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_data_buncg.v:37]
+INFO: [Synth 8-6157] synthesizing module 'Fullc1_Cal' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_state9 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state10 bound to: 10'b1000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal.v:61]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal.v:121]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'Fullc1_Cal_bias1_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_bias1_V.v:39]
+	Parameter DataWidth bound to: 3 - type: integer 
+	Parameter AddressRange bound to: 84 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Fullc1_Cal_bias1_V_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_bias1_V.v:6]
+	Parameter DWIDTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 84 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_bias1_V.v:18]
+INFO: [Synth 8-3876] $readmem data file './Fullc1_Cal_bias1_V_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_bias1_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc1_Cal_bias1_V_rom' (18#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_bias1_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc1_Cal_bias1_V' (19#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_bias1_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Fullc1_Cal_weighthbi' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_weighthbi.v:39]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 33600 - type: integer 
+	Parameter AddressWidth bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Fullc1_Cal_weighthbi_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_weighthbi.v:6]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 16 - type: integer 
+	Parameter MEM_SIZE bound to: 33600 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Fullc1_Cal_weighthbi_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_weighthbi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc1_Cal_weighthbi_rom' (20#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_weighthbi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc1_Cal_weighthbi' (21#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal_weighthbi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'my_tanh' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_state9 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state10 bound to: 10'b1000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:46]
+INFO: [Synth 8-6157] synthesizing module 'my_tanh_tanh_indeeOg' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_indeeOg.v:39]
+	Parameter DataWidth bound to: 9 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'my_tanh_tanh_indeeOg_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_indeeOg.v:6]
+	Parameter DWIDTH bound to: 9 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './my_tanh_tanh_indeeOg_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_indeeOg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'my_tanh_tanh_indeeOg_rom' (22#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_indeeOg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'my_tanh_tanh_indeeOg' (23#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_indeeOg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'my_tanh_tanh_valufYi' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_valufYi.v:39]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'my_tanh_tanh_valufYi_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_valufYi.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './my_tanh_tanh_valufYi_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_valufYi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'my_tanh_tanh_valufYi_rom' (24#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_valufYi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'my_tanh_tanh_valufYi' (25#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh_tanh_valufYi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_dcmp_64g8j' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_dcmp_64g8j.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+	Parameter AP_OEQ bound to: 5'b00001 
+	Parameter AP_OGT bound to: 5'b00010 
+	Parameter AP_OGE bound to: 5'b00011 
+	Parameter AP_OLT bound to: 5'b00100 
+	Parameter AP_OLE bound to: 5'b00101 
+	Parameter AP_ONE bound to: 5'b00110 
+	Parameter AP_UNO bound to: 5'b01000 
+	Parameter OP_EQ bound to: 8'b00010100 
+	Parameter OP_GT bound to: 8'b00100100 
+	Parameter OP_GE bound to: 8'b00110100 
+	Parameter OP_LT bound to: 8'b00001100 
+	Parameter OP_LE bound to: 8'b00011100 
+	Parameter OP_NE bound to: 8'b00101100 
+	Parameter OP_UO bound to: 8'b00000100 
+INFO: [Synth 8-638] synthesizing module 'Lenet_HLS_ap_dcmp_0_no_dsp_64' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_dcmp_0_no_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'd:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_dcmp_0_no_dsp_64.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'Lenet_HLS_ap_dcmp_0_no_dsp_64' (36#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_dcmp_0_no_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_dcmp_64g8j' (37#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_dcmp_64g8j.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:576]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:612]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:636]
+INFO: [Synth 8-6155] done synthesizing module 'my_tanh' (38#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_mul_mulibs' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulibs.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_mul_mulibs_DSP48_1' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulibs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_mul_mulibs_DSP48_1' (39#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulibs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_mul_mulibs' (40#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulibs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc1_Cal' (41#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc1_Cal.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv2_Cal' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 21'b000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 21'b000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 21'b000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 21'b000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 21'b000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 21'b000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 21'b000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 21'b000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 21'b000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 21'b000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 21'b000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 21'b000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 21'b000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 21'b000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 21'b000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 21'b000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 21'b000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 21'b000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 21'b001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 21'b010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 21'b100000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:73]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:245]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'Conv2_Cal_conv2_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_V.v:39]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 2400 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv2_Cal_conv2_V_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_V.v:6]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 2400 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv2_Cal_conv2_V_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2_Cal_conv2_V_rom' (42#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2_Cal_conv2_V' (43#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Conv2_Cal_conv2_bdEe' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_bdEe.v:39]
+	Parameter DataWidth bound to: 3 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv2_Cal_conv2_bdEe_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_bdEe.v:6]
+	Parameter DWIDTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_bdEe.v:18]
+INFO: [Synth 8-3876] $readmem data file './Conv2_Cal_conv2_bdEe_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_bdEe.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2_Cal_conv2_bdEe_rom' (44#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_bdEe.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2_Cal_conv2_bdEe' (45#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal_conv2_bdEe.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_mul_mulcud' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulcud.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 6 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter dout_WIDTH bound to: 19 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_mul_mulcud_DSP48_0' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulcud.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_mul_mulcud_DSP48_0' (46#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulcud.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_mul_mulcud' (47#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_mul_mulcud.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1069]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1071]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1073]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1075]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1077]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1079]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:1081]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2_Cal' (48#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv1_Cal' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 21'b000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 21'b000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 21'b000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 21'b000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 21'b000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 21'b000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 21'b000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 21'b000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 21'b000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 21'b000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 21'b000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 21'b000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 21'b000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 21'b000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 21'b000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 21'b000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 21'b000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 21'b000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 21'b001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 21'b010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 21'b100000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:73]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:219]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'Conv1_Cal_conv1_V_0' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_V_0.v:39]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 150 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1_Cal_conv1_V_0_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_V_0.v:6]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 150 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_V_0.v:18]
+INFO: [Synth 8-3876] $readmem data file './Conv1_Cal_conv1_V_0_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_V_0.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1_Cal_conv1_V_0_rom' (49#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_V_0.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1_Cal_conv1_V_0' (50#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_V_0.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Conv1_Cal_conv1_bbkb' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_bbkb.v:39]
+	Parameter DataWidth bound to: 3 - type: integer 
+	Parameter AddressRange bound to: 6 - type: integer 
+	Parameter AddressWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1_Cal_conv1_bbkb_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_bbkb.v:6]
+	Parameter DWIDTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 3 - type: integer 
+	Parameter MEM_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_bbkb.v:18]
+INFO: [Synth 8-3876] $readmem data file './Conv1_Cal_conv1_bbkb_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_bbkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1_Cal_conv1_bbkb_rom' (51#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_bbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1_Cal_conv1_bbkb' (52#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal_conv1_bbkb.v:39]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:995]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:997]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:999]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:1001]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:1003]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:1005]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:1007]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1_Cal' (53#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Pool1_Cal' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_state9 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state10 bound to: 10'b1000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:67]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:453]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:455]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:457]
+INFO: [Synth 8-6155] done synthesizing module 'Pool1_Cal' (54#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Pool2_Cal' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_state9 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state10 bound to: 10'b1000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:67]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:458]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:460]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:462]
+INFO: [Synth 8-6155] done synthesizing module 'Pool2_Cal' (55#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Fullc2_Cal' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_state5 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state6 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal.v:59]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal.v:109]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'Fullc2_Cal_bias2_V' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_bias2_V.v:39]
+	Parameter DataWidth bound to: 4 - type: integer 
+	Parameter AddressRange bound to: 65 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Fullc2_Cal_bias2_V_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_bias2_V.v:6]
+	Parameter DWIDTH bound to: 4 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 65 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_bias2_V.v:18]
+INFO: [Synth 8-3876] $readmem data file './Fullc2_Cal_bias2_V_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_bias2_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc2_Cal_bias2_V_rom' (56#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_bias2_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc2_Cal_bias2_V' (57#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_bias2_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Fullc2_Cal_weightjbC' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_weightjbC.v:39]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 5460 - type: integer 
+	Parameter AddressWidth bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Fullc2_Cal_weightjbC_rom' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_weightjbC.v:6]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 13 - type: integer 
+	Parameter MEM_SIZE bound to: 5460 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Fullc2_Cal_weightjbC_rom.dat' is read successfully [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_weightjbC.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc2_Cal_weightjbC_rom' (58#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_weightjbC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc2_Cal_weightjbC' (59#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal_weightjbC.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Fullc2_Cal' (60#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Fullc2_Cal.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Flatten_Layer' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Flatten_Layer.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_state2 bound to: 6'b000010 
+	Parameter ap_ST_fsm_state3 bound to: 6'b000100 
+	Parameter ap_ST_fsm_state4 bound to: 6'b001000 
+	Parameter ap_ST_fsm_state5 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state6 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Flatten_Layer.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'Flatten_Layer' (61#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Flatten_Layer.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_sitofp_ocq' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_sitofp_ocq.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Lenet_HLS_ap_sitofp_4_no_dsp_32' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'd:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_sitofp_4_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'Lenet_HLS_ap_sitofp_4_no_dsp_32' (71#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_sitofp_ocq' (72#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_sitofp_ocq.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_fpext_3pcA' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_fpext_3pcA.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Lenet_HLS_ap_fpext_0_no_dsp_32' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_fpext_0_no_dsp_32.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'd:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_fpext_0_no_dsp_32.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'Lenet_HLS_ap_fpext_0_no_dsp_32' (76#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_fpext_0_no_dsp_32.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_fpext_3pcA' (77#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_fpext_3pcA.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Lenet_HLS_ddiv_64qcK' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_ddiv_64qcK.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 31 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Lenet_HLS_ap_ddiv_29_no_dsp_64' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_ddiv_29_no_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 29 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'd:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_ddiv_29_no_dsp_64.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'Lenet_HLS_ap_ddiv_29_no_dsp_64' (83#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/ip/Lenet_HLS_ap_ddiv_29_no_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS_ddiv_64qcK' (84#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS_ddiv_64qcK.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter W bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (85#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (86#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 2 - type: integer 
+	Parameter W bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized1' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized1' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized1' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized1' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized1' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized1' (87#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/regslice_core.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:1952]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:1954]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2032]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2038]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2076]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2080]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2086]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2094]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2096]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2098]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2100]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2102]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2104]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2106]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2108]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2112]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2114]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2116]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2118]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2120]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2138]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:2148]
+INFO: [Synth 8-6155] done synthesizing module 'Lenet_HLS' (88#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ov_carplate_Lenet_HLS_0_0' (89#1) [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ip/ov_carplate_Lenet_HLS_0_0/synth/ov_carplate_Lenet_HLS_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized48 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized48 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized48 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized48 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized48 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized30 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized30 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized30 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized83 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized83 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized83 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized83 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized83 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port B[10]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized87 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized87 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized87 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized87 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized87 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized85 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized85 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized85 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized85 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized85 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized38 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized38 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized38 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized38 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized38 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized81 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized81 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized81 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized81 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized81 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized79 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized79 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized79 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized79 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized79 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized32 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized32 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized32 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized32 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized32 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized73 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized73 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized73 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized77 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized77 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized77 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized75 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized71 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized71 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized71 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized22 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized22 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized22 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized22 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized22 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized67 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized67 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized67 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized26 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized26 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized26 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized69 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CE
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:34 ; elapsed = 00:01:15 . Memory (MB): peak = 1240.777 ; gain = 448.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:19 . Memory (MB): peak = 1240.777 ; gain = 448.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:37 ; elapsed = 00:01:19 . Memory (MB): peak = 1240.777 ; gain = 448.672
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1240.777 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6248 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ip/ov_carplate_Lenet_HLS_0_0/constraints/Lenet_HLS_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ip/ov_carplate_Lenet_HLS_0_0/constraints/Lenet_HLS_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Project/ov_carplate/Vivado/ov_carplate.runs/ov_carplate_Lenet_HLS_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Project/ov_carplate/Vivado/ov_carplate.runs/ov_carplate_Lenet_HLS_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1354.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  FDE => FDRE: 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1372.105 ; gain = 17.965
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:02:09 . Memory (MB): peak = 1372.105 ; gain = 580.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:02:09 . Memory (MB): peak = 1372.105 ; gain = 580.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Project/ov_carplate/Vivado/ov_carplate.runs/ov_carplate_Lenet_HLS_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:02:09 . Memory (MB): peak = 1372.105 ; gain = 580.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Lenet_HLS_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Lenet_HLS_AXILiteS_s_axi'
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "op_tdata" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln55_reg_624_reg' and it is trimmed from '9' to '8' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:297]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_7_reg_577_reg' and it is trimmed from '63' to '52' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:274]
+INFO: [Synth 8-4471] merging register 'trunc_ln893_reg_552_reg[5:0]' into 'l_reg_547_reg[5:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/my_tanh.v:284]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-4471] merging register 'p_Result_24_reg_1492_reg[0:0]' into 'Range2_all_ones_1_reg_1514_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:462]
+INFO: [Synth 8-4471] merging register 'zext_ln126_reg_1358_reg[3:3]' into 'zext_ln124_reg_1340_reg[3:3]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:857]
+INFO: [Synth 8-4471] merging register 'zext_ln130_reg_1389_reg[8:4]' into 'zext_ln137_1_reg_1384_reg[8:4]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:835]
+INFO: [Synth 8-4471] merging register 'zext_ln133_reg_1407_reg[11:4]' into 'zext_ln137_2_reg_1402_reg[11:4]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:833]
+INFO: [Synth 8-4471] merging register 'sext_ln1117_reg_1420_reg[0:0]' into 'zext_ln124_reg_1340_reg[3:3]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:845]
+INFO: [Synth 8-4471] merging register 'zext_ln151_reg_1550_reg[8:4]' into 'zext_ln137_1_reg_1384_reg[8:4]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:849]
+INFO: [Synth 8-4471] merging register 'zext_ln153_reg_1563_reg[11:4]' into 'zext_ln137_2_reg_1402_reg[11:4]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:853]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln1116_1_reg_1452_reg' and it is trimmed from '12' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:470]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln1117_reg_1442_reg' and it is trimmed from '13' to '12' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:473]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln1117_1_reg_1447_reg' and it is trimmed from '11' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv2_Cal.v:472]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-4471] merging register 'p_Result_31_reg_1342_reg[0:0]' into 'Range2_all_ones_2_reg_1364_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:433]
+INFO: [Synth 8-4471] merging register 'zext_ln70_reg_1236_reg[4:3]' into 'zext_ln68_reg_1218_reg[4:3]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:797]
+INFO: [Synth 8-4471] merging register 'zext_ln94_reg_1413_reg[13:5]' into 'zext_ln79_1_reg_1289_reg[13:5]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:789]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln1117_7_reg_1307_reg' and it is trimmed from '9' to '8' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Conv1_Cal.v:441]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'sub_ln1494_1_reg_566_reg[1:0]' into 'sext_ln1494_reg_552_reg[1:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:401]
+INFO: [Synth 8-4471] merging register 'trunc_ln109_reg_571_reg[1:0]' into 'sext_ln1494_reg_552_reg[1:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:389]
+INFO: [Synth 8-4471] merging register 'trunc_ln110_reg_582_reg[2:0]' into 'sub_ln1494_2_reg_577_reg[2:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:391]
+INFO: [Synth 8-4471] merging register 'sub_ln203_1_reg_588_reg[0:0]' into 'sext_ln203_reg_558_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:405]
+INFO: [Synth 8-4471] merging register 'add_ln1494_13_reg_617_reg[0:0]' into 'or_ln108_reg_606_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:531]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_8_reg_649_reg' and it is trimmed from '12' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sub_ln203_1_reg_588_reg' and it is trimmed from '11' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:247]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln1494_13_reg_617_reg' and it is trimmed from '13' to '12' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:205]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln1494_11_reg_601_reg' and it is trimmed from '14' to '13' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:204]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln203_reg_669_reg' and it is trimmed from '64' to '13' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:232]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_7_reg_643_reg' and it is trimmed from '64' to '13' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:218]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sub_ln1494_2_reg_577_reg' and it is trimmed from '61' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:246]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln109_reg_571_reg' and it is trimmed from '12' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:248]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_6_reg_637_reg' and it is trimmed from '64' to '13' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:212]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sub_ln1494_1_reg_566_reg' and it is trimmed from '62' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:245]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'add_ln1494_2_reg_534_reg[0:0]' into 'add_ln1494_reg_520_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:406]
+INFO: [Synth 8-4471] merging register 'trunc_ln168_reg_539_reg[0:0]' into 'add_ln1494_reg_520_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:392]
+INFO: [Synth 8-4471] merging register 'trunc_ln169_reg_550_reg[1:0]' into 'add_ln1494_4_reg_545_reg[1:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:394]
+INFO: [Synth 8-4471] merging register 'add_ln1494_8_reg_585_reg[0:0]' into 'or_ln167_reg_574_reg[0:0]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:494]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_5_reg_617_reg' and it is trimmed from '10' to '9' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:231]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_2_reg_556_reg' and it is trimmed from '10' to '9' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:201]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln1494_8_reg_585_reg' and it is trimmed from '11' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:210]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln1494_6_reg_569_reg' and it is trimmed from '12' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:209]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln203_reg_637_reg' and it is trimmed from '64' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:244]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_4_reg_611_reg' and it is trimmed from '64' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln168_reg_539_reg' and it is trimmed from '11' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:202]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_3_reg_605_reg' and it is trimmed from '64' to '11' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:224]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_11_reg_309_reg' and it is trimmed from '10' to '9' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Flatten_Layer.v:162]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln203_reg_1465_reg' and it is trimmed from '12' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Lenet_HLS.v:1188]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Lenet_HLS_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Lenet_HLS_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:25 ; elapsed = 00:02:34 . Memory (MB): peak = 1372.105 ; gain = 580.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/Lenet_HLS_ap_dcmp_0_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized21) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized21) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_sitofp_ocq_U34/Lenet_HLS_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_fpext_3pcA_U35/Lenet_HLS_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_fpext_3pcA_U35/Lenet_HLS_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_fpext_3pcA_U35/Lenet_HLS_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_fpext_3pcA_U35/Lenet_HLS_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_fpext_3pcA_U35/Lenet_HLS_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized5) to 'inst/Lenet_HLS_fpext_3pcA_U35/Lenet_HLS_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized5) to 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized5) to 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized48) to 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized48) to 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized5) to 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-4471] merging register 'sub_ln1494_1_reg_566_reg[12:2]' into 'trunc_ln109_reg_571_reg[12:2]' [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:245]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln110_reg_582_reg' and it is trimmed from '11' to '10' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool1_Cal.v:249]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln169_reg_550_reg' and it is trimmed from '10' to '9' bits. [d:/Project/ov_carplate/Vivado/ov_carplate.srcs/sources_1/bd/ov_carplate/ipshared/f79d/hdl/verilog/Pool2_Cal.v:203]
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[0]' (FD) to 'inst/shl_ln_reg_1447_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[1]' (FD) to 'inst/shl_ln_reg_1447_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[2]' (FD) to 'inst/shl_ln_reg_1447_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[3]' (FD) to 'inst/shl_ln_reg_1447_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[4]' (FD) to 'inst/zext_ln461_reg_1515_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[5]' (FDE) to 'inst/zext_ln245_1_reg_1452_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[6]' (FDE) to 'inst/zext_ln245_1_reg_1452_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[7]' (FDE) to 'inst/zext_ln245_1_reg_1452_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[8]' (FDE) to 'inst/zext_ln245_1_reg_1452_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/shl_ln_reg_1447_reg[9]' (FDE) to 'inst/zext_ln245_1_reg_1452_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[30]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[29]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[28]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[27]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[26]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[25]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[24]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[23]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[22]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[21]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[20]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[19]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[18]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[17]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[16]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[15]' (FDE) to 'inst/Lenet_HLS_sitofp_ocq_U34/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[63]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Lenet_HLS_sitofp_ocq_U34/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Lenet_HLS_fpext_3pcA_U35/ce_r_reg)
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[52]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[53]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[54]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[55]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[56]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[57]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[58]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[59]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[60]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[61]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[62]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/MSB_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[0]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[1]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[2]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[3]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[4]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[5]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[6]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[7]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[8]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[9]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[10]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[11]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[12]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[13]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[14]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[15]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[16]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[17]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[18]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[19]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[20]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[21]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[22]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[23]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[24]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[25]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[26]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[27]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[28]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[29]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[30]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[31]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[32]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[33]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[34]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[35]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[36]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[37]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[38]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[39]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[40]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[41]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[42]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[43]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[44]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\din1_buf1_reg[44] )
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[45]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[46]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[46]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[47]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[47]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[48]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[48]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[49]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[50]' (FDE) to 'inst/Lenet_HLS_ddiv_64qcK_U36/din1_buf1_reg[51]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\din1_buf1_reg[51] )
+INFO: [Synth 8-3886] merging instance 'inst/ireg_V_reg_1500_reg[52]' (FDE) to 'inst/zext_ln461_reg_1515_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/trunc_ln595_reg_1570_reg[5]' (FDE) to 'inst/F2_reg_1538_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/trunc_ln595_reg_1570_reg[4]' (FDE) to 'inst/F2_reg_1538_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/trunc_ln595_reg_1570_reg[3]' (FDE) to 'inst/F2_reg_1538_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/trunc_ln595_reg_1570_reg[2]' (FDE) to 'inst/zext_ln461_reg_1515_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ireg_V_reg_1500_reg[54]' (FDE) to 'inst/zext_ln461_reg_1515_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/trunc_ln595_reg_1570_reg[1]' (FDE) to 'inst/F2_reg_1538_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/trunc_ln595_reg_1570_reg[0]' (FDE) to 'inst/F2_reg_1538_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ireg_V_reg_1500_reg[42]' (FDE) to 'inst/p_Result_15_reg_1520_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/ireg_V_reg_1500_reg[26]' (FDE) to 'inst/p_Result_15_reg_1520_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ireg_V_reg_1500_reg[34]' (FDE) to 'inst/p_Result_15_reg_1520_reg[34]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\p_Result_15_reg_1520_reg[52] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\man_V_2_reg_1525_reg[53] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\zext_ln245_1_reg_1452_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Pool1_Cal_fu_383/i_fu_463_p2_inferred/\i_0_reg_156_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Conv1_Cal_fu_371/\zext_ln79_1_reg_1289_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_Pool1_Cal_fu_383/\or_ln108_reg_606_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Pool1_Cal_fu_383/\sext_ln203_reg_558_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Pool2_Cal_fu_391/i_fu_431_p2_inferred/\i_0_reg_152_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Conv2_Cal_fu_359/\zext_ln137_1_reg_1384_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_Pool2_Cal_fu_391/\or_ln167_reg_574_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Pool2_Cal_fu_391/\add_ln1494_reg_520_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Flatten_Layer_fu_411/\zext_ln216_reg_278_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_Fullc1_Cal_fu_343/\grp_my_tanh_fu_165/add_ln908_reg_567_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Fullc1_Cal_fu_343/\grp_my_tanh_fu_165/icmp_ln908_reg_562_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_Fullc1_Cal_fu_343/\grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/opcode_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_Fullc1_Cal_fu_343/\grp_my_tanh_fu_165/Lenet_HLS_dcmp_64g8j_U18/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_Fullc1_Cal_fu_343/\grp_my_tanh_fu_165/or_ln924_reg_597_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\zext_ln206_reg_1722_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_fpext_3pcA_U35/\dout_r_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_1_reg_1490_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\din0_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Lenet_HLS_ddiv_64qcK_U36/\Lenet_HLS_ap_ddiv_29_no_dsp_64_u/U0 /i_synth/\DIV_OP.SPD.OP/MANT_DIV /\RT[3].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[28] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module Lenet_HLS_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module Lenet_HLS_AXILiteS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:14:38 ; elapsed = 00:16:29 . Memory (MB): peak = 1372.105 ; gain = 580.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:14:56 ; elapsed = 00:16:48 . Memory (MB): peak = 1372.105 ; gain = 580.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:15:00 ; elapsed = 00:16:53 . Memory (MB): peak = 1403.418 ; gain = 611.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance inst/layer1_V_U/Lenet_HLS_layer1_V_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer2_V_U/Lenet_HLS_layer2_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer2_V_U/Lenet_HLS_layer2_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer2_V_U/Lenet_HLS_layer2_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer2_V_U/Lenet_HLS_layer2_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer2_V_U/Lenet_HLS_layer2_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer2_V_U/Lenet_HLS_layer2_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer3_V_U/Lenet_HLS_layer3_V_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer4_V_U/Lenet_HLS_layer4_V_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer4_V_U/Lenet_HLS_layer4_V_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/layer5_V_U/Lenet_HLS_layer5_V_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/flatten1_V_U/Lenet_HLS_layer5_V_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc1_Cal_fu_343/weight1_V_U/Fullc1_Cal_weighthbi_rom_U/q0_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc1_Cal_fu_343/weight1_V_U/Fullc1_Cal_weighthbi_rom_U/q0_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc1_Cal_fu_343/weight1_V_U/Fullc1_Cal_weighthbi_rom_U/q0_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc1_Cal_fu_343/weight1_V_U/Fullc1_Cal_weighthbi_rom_U/q0_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc1_Cal_fu_343/weight1_V_U/Fullc1_Cal_weighthbi_rom_U/q0_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc1_Cal_fu_343/weight1_V_U/Fullc1_Cal_weighthbi_rom_U/q0_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Conv2_Cal_fu_359/conv2_V_U/Conv2_Cal_conv2_V_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc2_Cal_fu_399/weight2_V_U/Fullc2_Cal_weightjbC_rom_U/q0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/grp_Fullc2_Cal_fu_399/weight2_V_U/Fullc2_Cal_weightjbC_rom_U/q0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:15:09 ; elapsed = 00:17:02 . Memory (MB): peak = 1429.574 ; gain = 637.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:15:18 ; elapsed = 00:17:12 . Memory (MB): peak = 1432.668 ; gain = 640.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:15:19 ; elapsed = 00:17:12 . Memory (MB): peak = 1432.668 ; gain = 640.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:15:21 ; elapsed = 00:17:15 . Memory (MB): peak = 1432.668 ; gain = 640.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:15:21 ; elapsed = 00:17:15 . Memory (MB): peak = 1432.668 ; gain = 640.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:15:22 ; elapsed = 00:17:16 . Memory (MB): peak = 1436.641 ; gain = 644.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:15:22 ; elapsed = 00:17:16 . Memory (MB): peak = 1436.641 ; gain = 644.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CARRY4      |   255|
+|2     |DSP48E1     |     1|
+|3     |DSP48E1_1   |     1|
+|4     |DSP48E1_3   |     1|
+|5     |DSP48E1_5   |     6|
+|6     |DSP48E1_6   |     1|
+|7     |LUT1        |   182|
+|8     |LUT2        |  3049|
+|9     |LUT3        |  1030|
+|10    |LUT4        |   529|
+|11    |LUT5        |   437|
+|12    |LUT6        |   728|
+|13    |MUXCY       |  3142|
+|14    |MUXF7       |    15|
+|15    |RAM16X1S    |    36|
+|16    |RAM64X1S    |    24|
+|17    |RAMB18E1    |     3|
+|18    |RAMB18E1_4  |     1|
+|19    |RAMB18E1_5  |     1|
+|20    |RAMB18E1_6  |     1|
+|21    |RAMB18E1_7  |     1|
+|22    |RAMB36E1    |     3|
+|23    |RAMB36E1_1  |     1|
+|24    |RAMB36E1_10 |     1|
+|25    |RAMB36E1_11 |     1|
+|26    |RAMB36E1_12 |     2|
+|27    |RAMB36E1_13 |     1|
+|28    |RAMB36E1_14 |     1|
+|29    |RAMB36E1_15 |     1|
+|30    |RAMB36E1_2  |     1|
+|31    |RAMB36E1_3  |     1|
+|32    |RAMB36E1_4  |     1|
+|33    |RAMB36E1_5  |     1|
+|34    |RAMB36E1_6  |     1|
+|35    |RAMB36E1_7  |     1|
+|36    |RAMB36E1_8  |     1|
+|37    |RAMB36E1_9  |     1|
+|38    |SRL16E      |    31|
+|39    |SRLC32E     |    37|
+|40    |XORCY       |  3035|
+|41    |FDE         |    16|
+|42    |FDRE        |  4010|
+|43    |FDSE        |    33|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:15:22 ; elapsed = 00:17:16 . Memory (MB): peak = 1436.641 ; gain = 644.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 375 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:14:25 ; elapsed = 00:16:42 . Memory (MB): peak = 1436.641 ; gain = 513.207
+Synthesis Optimization Complete : Time (s): cpu = 00:15:22 ; elapsed = 00:17:17 . Memory (MB): peak = 1436.641 ; gain = 644.535
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1444.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6559 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1457.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 905 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 829 instances
+  FDE => FDRE: 16 instances
+  RAM16X1S => RAM32X1S (RAMS32): 36 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+491 Infos, 183 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:15:52 ; elapsed = 00:18:23 . Memory (MB): peak = 1457.422 ; gain = 961.473
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1457.422 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Project/ov_carplate/Vivado/ov_carplate.runs/ov_carplate_Lenet_HLS_0_0_synth_1/ov_carplate_Lenet_HLS_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1457.422 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ov_carplate_Lenet_HLS_0_0, cache-ID = 9926615015b9f18d
+INFO: [Coretcl 2-1174] Renamed 377 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1457.422 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Project/ov_carplate/Vivado/ov_carplate.runs/ov_carplate_Lenet_HLS_0_0_synth_1/ov_carplate_Lenet_HLS_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ov_carplate_Lenet_HLS_0_0_utilization_synth.rpt -pb ov_carplate_Lenet_HLS_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 24 14:19:14 2020...

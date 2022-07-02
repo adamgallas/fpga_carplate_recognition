@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="box" xd:componentRef="box" xd:initiationInterval="1075150860" xd:clockPeriod="11.100" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="buffer[]" xd:originalName="buffer" xd:direction="out" xd:interfaceRef="buffer_V_PORTA" xd:busTypeRef="bram" xd:arraySize="3600" xd:dataWidth="32"/>
+  <xd:arg xd:name="buffer[]" xd:originalName="buffer" xd:direction="out" xd:interfaceRef="buffer_V_PORTB" xd:busTypeRef="bram" xd:arraySize="3600" xd:dataWidth="32"/>
+  <xd:arg xd:name="video_src.data" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="video_src.keep" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_src.strb" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_src.user" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_src.last" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_src.id" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_src.dest" xd:originalName="video_src" xd:direction="in" xd:interfaceRef="video_src" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.data" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="video_dst.keep" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_dst.strb" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="4"/>
+  <xd:arg xd:name="video_dst.user" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.last" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.id" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video_dst.dest" xd:originalName="video_dst" xd:direction="out" xd:interfaceRef="video_dst" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="xleft_" xd:originalName="xleft_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="xright_" xd:originalName="xright_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="ytop_" xd:originalName="ytop_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="ydown_" xd:originalName="ydown_" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="924487" xd:worst-case="1075150859" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="12340" xd:FF="11540" xd:BRAM="6" xd:DSP="43"/>
+</xd:acceleratorMap>

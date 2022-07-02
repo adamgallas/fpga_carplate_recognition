@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'input_layer.data.V' (src/lenet.cpp:226)." projectName="Lenet_HLS_Final" solutionName="conv_optimization" date="2020-08-19T09:56:38.003+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] src/lenet.cpp:50: variable-indexed range selection may cause suboptimal QoR." projectName="Lenet_HLS_Final" solutionName="conv_optimization" date="2020-08-19T09:56:37.065+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Lenet_HLS_ap_sitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Lenet_HLS_Final" solutionName="conv_optimization" date="2020-08-19T09:58:41.386+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Lenet_HLS_ap_fpext_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Lenet_HLS_Final" solutionName="conv_optimization" date="2020-08-19T09:58:37.734+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Lenet_HLS_ap_ddiv_29_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Lenet_HLS_Final" solutionName="conv_optimization" date="2020-08-19T09:58:34.312+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'Lenet_HLS_ap_dcmp_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;&#xA;create_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 510.133 ; gain = 41.410" projectName="Lenet_HLS_Final" solutionName="conv_optimization" date="2020-08-19T09:58:29.583+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,190 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_CACHE_LEN_proc2'
+================================================================
+* Date:           Tue Aug 18 10:30:47 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Final_Processing
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 11.10 ns | 6.581 ns |   1.39 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    63001|    63001| 0.699 ms | 0.699 ms |  63001|  63001|   none  |
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- CACHE_LEN   |    63000|    63000|        35|          -|          -|  1800|    no    |
+        | + CACHE_BIT  |       32|       32|         2|          1|          1|    32|    yes   |
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 5 4 
+4 --> 3 
+5 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([1800 x i32]* %buffer_V, [5 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %dilate_copy1_data_stream_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str315, i32 0, i32 0, [1 x i8]* @p_str316, [1 x i8]* @p_str317, [1 x i8]* @p_str318, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str319, [1 x i8]* @p_str320)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.76ns)   --->   "br label %0" [top.cpp:63]   --->   Operation 8 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.85>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%i_0 = phi i11 [ 0, %newFuncRoot ], [ %i, %CACHE_LEN_end ]"   --->   Operation 9 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.88ns)   --->   "%icmp_ln63 = icmp eq i11 %i_0, -248" [top.cpp:63]   --->   Operation 10 'icmp' 'icmp_ln63' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (1.63ns)   --->   "%i = add i11 %i_0, 1" [top.cpp:63]   --->   Operation 11 'add' 'i' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "br i1 %icmp_ln63, label %.exitStub, label %CACHE_LEN_begin" [top.cpp:63]   --->   Operation 12 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str5) nounwind" [top.cpp:63]   --->   Operation 13 'specloopname' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str5)" [top.cpp:63]   --->   Operation 14 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 1800, i32 1800, i32 1800, [1 x i8]* @p_str1) nounwind" [top.cpp:64]   --->   Operation 15 'speclooptripcount' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (1.76ns)   --->   "br label %1" [top.cpp:66]   --->   Operation 16 'br' <Predicate = (!icmp_ln63)> <Delay = 1.76>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 17 'ret' <Predicate = (icmp_ln63)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.40>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%p_0_1 = phi i32 [ 0, %CACHE_LEN_begin ], [ %store_V_2, %CACHE_BIT_begin ]"   --->   Operation 18 'phi' 'p_0_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%j_0 = phi i6 [ 0, %CACHE_LEN_begin ], [ %j, %CACHE_BIT_begin ]"   --->   Operation 19 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (1.42ns)   --->   "%icmp_ln66 = icmp eq i6 %j_0, -32" [top.cpp:66]   --->   Operation 20 'icmp' 'icmp_ln66' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 21 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (1.82ns)   --->   "%j = add i6 %j_0, 1" [top.cpp:66]   --->   Operation 22 'add' 'j' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %icmp_ln66, label %CACHE_LEN_end, label %CACHE_BIT_begin" [top.cpp:66]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (1.42ns)   --->   "%icmp_ln71 = icmp eq i6 %j_0, 31" [top.cpp:71]   --->   Operation 24 'icmp' 'icmp_ln71' <Predicate = (!icmp_ln66)> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.58>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str6) nounwind" [top.cpp:66]   --->   Operation 25 'specloopname' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str6)" [top.cpp:66]   --->   Operation 26 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [top.cpp:68]   --->   Operation 27 'specpipeline' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str28)" [D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:672->D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711->top.cpp:69]   --->   Operation 28 'specregionbegin' 'tmp_3' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str1) nounwind" [D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:676->D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711->top.cpp:69]   --->   Operation 29 'specprotocol' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (3.63ns)   --->   "%tmp = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %dilate_copy1_data_stream_0_V)" [D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:679->D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711->top.cpp:69]   --->   Operation 30 'read' 'tmp' <Predicate = (!icmp_ln66)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%empty_223 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str28, i32 %tmp_3)" [D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:681->D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711->top.cpp:69]   --->   Operation 31 'specregionend' 'empty_223' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (1.55ns)   --->   "%icmp_ln70 = icmp eq i8 %tmp, 0" [top.cpp:70]   --->   Operation 32 'icmp' 'icmp_ln70' <Predicate = (!icmp_ln66)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 33 [1/1] (2.55ns)   --->   "%store_V = add i32 1, %p_0_1" [top.cpp:70]   --->   Operation 33 'add' 'store_V' <Predicate = (!icmp_ln66)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (0.69ns)   --->   "%select_ln70 = select i1 %icmp_ln70, i32 %p_0_1, i32 %store_V" [top.cpp:70]   --->   Operation 34 'select' 'select_ln70' <Predicate = (!icmp_ln66)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node store_V_2)   --->   "%store_V_1 = shl i32 %select_ln70, 1" [top.cpp:71]   --->   Operation 35 'shl' 'store_V_1' <Predicate = (!icmp_ln66 & !icmp_ln71)> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.69ns) (out node of the LUT)   --->   "%store_V_2 = select i1 %icmp_ln71, i32 %select_ln70, i32 %store_V_1" [top.cpp:71]   --->   Operation 36 'select' 'store_V_2' <Predicate = (!icmp_ln66)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%empty_224 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str6, i32 %tmp_2)" [top.cpp:72]   --->   Operation 37 'specregionend' 'empty_224' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "br label %1" [top.cpp:66]   --->   Operation 38 'br' <Predicate = (!icmp_ln66)> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 3.25>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln73 = zext i11 %i_0 to i64" [top.cpp:73]   --->   Operation 39 'zext' 'zext_ln73' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%buffer_V_addr = getelementptr [1800 x i32]* %buffer_V, i64 0, i64 %zext_ln73" [top.cpp:73]   --->   Operation 40 'getelementptr' 'buffer_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (3.25ns)   --->   "store i32 %p_0_1, i32* %buffer_V_addr, align 4" [top.cpp:73]   --->   Operation 41 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1800> <RAM>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str5, i32 %tmp_1)" [top.cpp:75]   --->   Operation 42 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "br label %0" [top.cpp:63]   --->   Operation 43 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 11.1ns, clock uncertainty: 1.39ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', top.cpp:63) [7]  (1.77 ns)
+
+ <State 2>: 2.86ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln63', top.cpp:63) [8]  (1.88 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 3>: 2.4ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln66', top.cpp:66) [19]  (1.43 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 4>: 6.58ns
+The critical path consists of the following:
+	fifo read on port 'dilate_copy1_data_stream_0_V' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:679->D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_core.h:711->top.cpp:69) [29]  (3.63 ns)
+	'icmp' operation ('icmp_ln70', top.cpp:70) [31]  (1.55 ns)
+	'select' operation ('select_ln70', top.cpp:70) [33]  (0.698 ns)
+	'select' operation ('store.V', top.cpp:71) [36]  (0.698 ns)
+
+ <State 5>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('buffer_V_addr', top.cpp:73) [41]  (0 ns)
+	'store' operation ('store_ln73', top.cpp:73) of variable 'store.V' on array 'buffer_V' [42]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

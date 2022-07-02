@@ -1,0 +1,177 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'my_tanh'" level="0">
+<item name = "Date">Wed Aug 19 09:56:55 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Lenet_HLS_Final</item>
+<item name = "Solution">conv_optimization</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.552 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5, 521, 50.000 ns, 5.210 us, 5, 521, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- TANH_SEARCH">2, 513, 2, -, -, 1 ~ 256, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 40, 889, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 0, 130, 469, -</column>
+<column name="Memory">2, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 137, -</column>
+<column name="Register">-, -, 373, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="Lenet_HLS_dcmp_64g8j_U18">Lenet_HLS_dcmp_64g8j, 0, 0, 130, 469, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="tanh_index_V_U">my_tanh_tanh_indeeOg, 1, 0, 0, 0, 256, 9, 1, 2304</column>
+<column name="tanh_value_V_U">my_tanh_tanh_valufYi, 1, 0, 0, 0, 256, 8, 1, 2048</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln899_fu_319_p2">+, 0, 0, 12, 7, 12</column>
+<column name="add_ln908_fu_358_p2">+, 0, 0, 39, 7, 32</column>
+<column name="add_ln915_fu_459_p2">+, 0, 0, 12, 11, 11</column>
+<column name="i_fu_505_p2">+, 0, 0, 15, 9, 1</column>
+<column name="lsb_index_fu_246_p2">+, 0, 0, 39, 7, 32</column>
+<column name="m_2_fu_404_p2">+, 0, 0, 71, 64, 64</column>
+<column name="sub_ln894_fu_237_p2">-, 0, 0, 39, 4, 32</column>
+<column name="sub_ln897_fu_272_p2">-, 0, 0, 13, 2, 4</column>
+<column name="sub_ln908_fu_364_p2">-, 0, 0, 39, 6, 32</column>
+<column name="sub_ln915_fu_454_p2">-, 0, 0, 12, 3, 11</column>
+<column name="tmp_V_fu_193_p2">-, 0, 0, 12, 1, 12</column>
+<column name="a_fu_299_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln899_fu_332_p2">and, 0, 0, 2, 1, 1</column>
+<column name="grp_fu_174_p2">and, 0, 0, 2, 1, 1</column>
+<column name="p_Result_4_fu_288_p2">and, 0, 0, 12, 12, 12</column>
+<column name="l_fu_225_p3">cttz, 0, 40, 36, 32, 0</column>
+<column name="icmp_ln1495_fu_520_p2">icmp, 0, 0, 13, 12, 12</column>
+<column name="icmp_ln54_fu_499_p2">icmp, 0, 0, 13, 9, 10</column>
+<column name="icmp_ln885_fu_179_p2">icmp, 0, 0, 13, 12, 1</column>
+<column name="icmp_ln897_1_fu_293_p2">icmp, 0, 0, 13, 12, 1</column>
+<column name="icmp_ln897_fu_262_p2">icmp, 0, 0, 18, 31, 1</column>
+<column name="icmp_ln908_fu_352_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln924_1_fu_438_p2">icmp, 0, 0, 29, 52, 1</column>
+<column name="icmp_ln924_fu_484_p2">icmp, 0, 0, 13, 11, 2</column>
+<column name="lshr_ln897_fu_282_p2">lshr, 0, 0, 27, 2, 12</column>
+<column name="lshr_ln908_fu_376_p2">lshr, 0, 0, 101, 32, 32</column>
+<column name="or_ln899_fu_338_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln924_fu_490_p2">or, 0, 0, 2, 1, 1</column>
+<column name="m_1_fu_394_p3">select, 0, 0, 64, 1, 64</column>
+<column name="select_ln915_fu_447_p3">select, 0, 0, 10, 1, 10</column>
+<column name="tmp_V_3_fu_199_p3">select, 0, 0, 12, 1, 12</column>
+<column name="shl_ln908_fu_388_p2">shl, 0, 0, 182, 64, 64</column>
+<column name="xor_ln899_fu_313_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="agg_result_V_0_reg_149">15, 3, 8, 24</column>
+<column name="ap_NS_fsm">50, 11, 1, 11</column>
+<column name="ap_phi_mux_agg_result_V_0_phi_fu_154_p8">9, 2, 8, 16</column>
+<column name="ap_return">9, 2, 8, 16</column>
+<column name="grp_fu_168_opcode">15, 3, 5, 15</column>
+<column name="grp_fu_168_p0">15, 3, 64, 192</column>
+<column name="grp_fu_168_p1">15, 3, 64, 192</column>
+<column name="i_0_reg_138">9, 2, 9, 18</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln908_reg_567">32, 0, 32, 0</column>
+<column name="agg_result_V_0_reg_149">8, 0, 8, 0</column>
+<column name="and_ln924_1_reg_611">1, 0, 1, 0</column>
+<column name="and_ln924_reg_607">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="ap_return_preg">8, 0, 8, 0</column>
+<column name="bitcast_ln729_reg_602">64, 0, 64, 0</column>
+<column name="i_0_reg_138">9, 0, 9, 0</column>
+<column name="i_reg_619">9, 0, 9, 0</column>
+<column name="icmp_ln54_reg_615">1, 0, 1, 0</column>
+<column name="icmp_ln885_reg_530">1, 0, 1, 0</column>
+<column name="icmp_ln908_reg_562">1, 0, 1, 0</column>
+<column name="icmp_ln924_1_reg_587">1, 0, 1, 0</column>
+<column name="l_reg_547">32, 0, 32, 0</column>
+<column name="m_7_reg_577">63, 0, 63, 0</column>
+<column name="or_ln924_reg_597">1, 0, 1, 0</column>
+<column name="or_ln_reg_557">1, 0, 32, 31</column>
+<column name="p_Result_11_reg_592">64, 0, 64, 0</column>
+<column name="p_Result_9_reg_534">1, 0, 1, 0</column>
+<column name="sub_ln908_reg_572">32, 0, 32, 0</column>
+<column name="tmp_6_reg_582">1, 0, 1, 0</column>
+<column name="tmp_V_3_reg_539">12, 0, 12, 0</column>
+<column name="trunc_ln893_reg_552">11, 0, 11, 0</column>
+<column name="zext_ln55_reg_624">9, 0, 64, 55</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, my_tanh, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, my_tanh, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, my_tanh, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, my_tanh, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, my_tanh, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, my_tanh, return value</column>
+<column name="ap_return">out, 8, ap_ctrl_hs, my_tanh, return value</column>
+<column name="x_V">in, 12, ap_none, x_V, scalar</column>
+</table>
+</item>
+</section>
+</profile>

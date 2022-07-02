@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block_Mat.exit22_pro' to 'Block_Mat_exit22_pro'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:49.452+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.0'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.899+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.1'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.526+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.0'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.506+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.1'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.486+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.2'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.473+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.2'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.457+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.0.0'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.439+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.1.1'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.423+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.1.0'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.408+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.0.1'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.395+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.1.2'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.377+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.0.2'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.361+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.0'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.346+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.1'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.332+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.0'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.316+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.1'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.300+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.2'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.287+0800" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.2'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.274+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit22_proc' to 'Block_Mat.exit22_pro' (top.cpp:28)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:47.263+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Loop_BRAM_LOOP_proc102' to 'Loop_BRAM_LOOP_proc1' (top.cpp:46:19)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.932+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;32, 720, 1280, 4096>' to 'AXIvideo2Mat' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:49:9)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.920+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::CvtColor&lt;HLS_RGB2GRAY, 4096, 0, 720, 1280>' to 'CvtColor' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:409:39)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.909+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Duplicate&lt;720, 1280, 4096, 4096>' to 'Duplicate' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_arithm.h:672:50)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.897+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;32, 720, 1280, 4096>' to 'Mat2AXIvideo' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:78:50)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.866+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Resize&lt;4096, 720, 1280, 720, 1280>' to 'Resize' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:2454:9)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.854+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Resize_opr_linear&lt;4096, 720, 1280, 720, 1280>' to 'Resize_opr_linear' (D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:409:21)" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.843+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'BRAM_LOOP' (top.cpp:46:30) in function 'Loop_BRAM_LOOP_proc102' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic in the loop latch." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:46.830+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 720 to 63 for loop 'loop_height' in function 'hls::CvtColor&lt;HLS_RGB2GRAY, 4096, 0, 720, 1280>'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:44.778+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 1280 to 255 for loop 'loop_width' in function 'hls::CvtColor&lt;HLS_RGB2GRAY, 4096, 0, 720, 1280>'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:44.618+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buffer.V' should be updated in process function 'Loop_BRAM_LOOP_proc102', otherwise it may not be synthesized correctly." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:43.744+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 720 for loop 'loop_height' in function 'hls::Mat2AXIvideo&lt;32, 720, 1280, 4096>'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:43.568+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1280 for loop 'loop_width' in function 'hls::Mat2AXIvideo&lt;32, 720, 1280, 4096>'." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:43.444+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'output_img.data_stream.V' (top.cpp:31)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.984+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'plate.data_stream.V' (top.cpp:33)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.294+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'rgb_img.data_stream.V' (top.cpp:28)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.280+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'gray_plate.data_stream.V' (top.cpp:35)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.266+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'copy2.data_stream.V' (top.cpp:30)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.254+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'copy1.data_stream.V' (top.cpp:29)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.243+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'standard_plate.data_stream.V' (top.cpp:34)." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:41.232+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] D:/Program_Files/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:40.730+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file top.cpp" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:36.487+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: top.cpp:45:2" projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:49:11.472+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:48:49.499+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="Cache_Plate" solutionName="solution1" date="2020-08-18T20:48:49.408+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

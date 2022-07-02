@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="top.cpp" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing\top.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing\tb.cpp"/>
+    <originFiles name="src_1.jpg" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing\src_1.jpg"/>
+    <originFiles name="src_2.png" path="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Final_Processing\src_2.png"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

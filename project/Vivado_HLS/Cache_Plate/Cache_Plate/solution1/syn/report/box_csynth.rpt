@@ -1,0 +1,253 @@
+
+
+================================================================
+== Vivado HLS Report for 'box'
+================================================================
+* Date:           Tue Aug 18 20:50:07 2020
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        Cache_Plate
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 11.10 ns | 9.400 ns |   1.39 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+-----------+------------+--------+------------+----------+
+    |   Latency (cycles)   |   Latency (absolute)   |       Interval      | Pipeline |
+    |   min   |     max    |    min    |     max    |   min  |     max    |   Type   |
+    +---------+------------+-----------+------------+--------+------------+----------+
+    |   924487|  1075150859| 10.262 ms | 11.934 sec |  924482|  1075150859| dataflow |
+    +---------+------------+-----------+------------+--------+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+---------+------------+-----------+------------+--------+------------+---------+
+        |                         |                      |   Latency (cycles)   |   Latency (absolute)   |       Interval      | Pipeline|
+        |         Instance        |        Module        |   min   |     max    |    min    |     max    |   min  |     max    |   Type  |
+        +-------------------------+----------------------+---------+------------+-----------+------------+--------+------------+---------+
+        |Resize_U0                |Resize                |       54|  1075150858|  0.599 us | 11.934 sec |      54|  1075150858|   none  |
+        |Add_Rectangle_U0         |Add_Rectangle         |   923761|      923761| 10.254 ms |  10.254 ms |  923761|      923761|   none  |
+        |AXIvideo2Mat_U0          |AXIvideo2Mat          |        3|      925203| 33.300 ns |  10.270 ms |       3|      925203|   none  |
+        |Return_Plate_U0          |Return_Plate          |   921602|      921602| 10.230 ms |  10.230 ms |  921602|      921602|   none  |
+        |Duplicate_U0             |Duplicate             |        1|      923761| 11.100 ns |  10.254 ms |       1|      923761|   none  |
+        |CvtColor_U0              |CvtColor              |        1|       16444| 11.100 ns |  0.183 ms  |       1|       16444|   none  |
+        |Block_Mat_exit22_pro_U0  |Block_Mat_exit22_pro  |        0|           0|    0 ns   |    0 ns    |       0|           0|   none  |
+        |Mat2AXIvideo_U0          |Mat2AXIvideo          |   924481|      924481| 10.262 ms |  10.262 ms |  924481|      924481|   none  |
+        |Loop_BRAM_LOOP_proc1_U0  |Loop_BRAM_LOOP_proc1  |    25201|       25201|  0.280 ms |  0.280 ms  |   25201|       25201|   none  |
+        +-------------------------+----------------------+---------+------------+-----------+------------+--------+------------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     36|    -|
+|FIFO             |        0|      -|     185|    994|    -|
+|Instance         |        6|     43|   11349|  11274|    0|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     36|    -|
+|Register         |        -|      -|       6|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        6|     43|   11540|  12340|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        2|     19|      10|     23|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+------+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +-------------------------+----------------------+---------+-------+------+------+-----+
+    |AXIvideo2Mat_U0          |AXIvideo2Mat          |        0|      0|   365|   445|    0|
+    |Add_Rectangle_U0         |Add_Rectangle         |        0|      0|   428|   911|    0|
+    |Block_Mat_exit22_pro_U0  |Block_Mat_exit22_pro  |        0|      0|     3|   338|    0|
+    |CvtColor_U0              |CvtColor              |        0|      3|   220|   260|    0|
+    |Duplicate_U0             |Duplicate             |        0|      0|   168|   292|    0|
+    |Loop_BRAM_LOOP_proc1_U0  |Loop_BRAM_LOOP_proc1  |        0|      0|    56|   135|    0|
+    |Mat2AXIvideo_U0          |Mat2AXIvideo          |        0|      0|    43|   190|    0|
+    |Resize_U0                |Resize                |        6|     40|  9701|  8011|    0|
+    |Return_Plate_U0          |Return_Plate          |        0|      0|   177|   396|    0|
+    |box_AXILiteS_s_axi_U     |box_AXILiteS_s_axi    |        0|      0|   188|   296|    0|
+    +-------------------------+----------------------+---------+-------+------+------+-----+
+    |Total                    |                      |        6|     43| 11349| 11274|    0|
+    +-------------------------+----------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+    |           Name           | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+    |copy1_data_stream_0_U     |        0|  5|   0|    -|     2|    8|       16|
+    |copy1_data_stream_1_U     |        0|  5|   0|    -|     2|    8|       16|
+    |copy1_data_stream_2_U     |        0|  5|   0|    -|     2|    8|       16|
+    |copy2_data_stream_0_U     |        0|  5|   0|    -|     2|    8|       16|
+    |copy2_data_stream_1_U     |        0|  5|   0|    -|     2|    8|       16|
+    |copy2_data_stream_2_U     |        0|  5|   0|    -|     2|    8|       16|
+    |gray_plate_data_stre_U    |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |output_img_data_stre_U    |        0|  5|   0|    -|     2|    8|       16|
+    |plate_cols_V_c_U          |        0|  5|   0|    -|     5|   32|      160|
+    |plate_data_stream_0_U     |        0|  5|   0|    -|     2|    8|       16|
+    |plate_data_stream_1_U     |        0|  5|   0|    -|     2|    8|       16|
+    |plate_data_stream_2_U     |        0|  5|   0|    -|     2|    8|       16|
+    |plate_rows_V_c_U          |        0|  5|   0|    -|     5|   32|      160|
+    |rgb_img_cols_V_c40_U      |        0|  5|   0|    -|     2|   12|       24|
+    |rgb_img_cols_V_c_U        |        0|  5|   0|    -|     2|   12|       24|
+    |rgb_img_data_stream_1_U   |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_data_stream_2_U   |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_data_stream_s_U   |        0|  5|   0|    -|     2|    8|       16|
+    |rgb_img_rows_V_c39_U      |        0|  5|   0|    -|     2|   11|       22|
+    |rgb_img_rows_V_c_U        |        0|  5|   0|    -|     2|   11|       22|
+    |standard_plate_cols_1_U   |        0|  5|   0|    -|     5|    9|       45|
+    |standard_plate_cols_s_U   |        0|  5|   0|    -|     2|    9|       18|
+    |standard_plate_data_1_U   |        0|  5|   0|    -|     2|    8|       16|
+    |standard_plate_data_2_U   |        0|  5|   0|    -|     2|    8|       16|
+    |standard_plate_data_s_U   |        0|  5|   0|    -|     2|    8|       16|
+    |standard_plate_rows_1_U   |        0|  5|   0|    -|     5|    7|       35|
+    |standard_plate_rows_s_U   |        0|  5|   0|    -|     2|    7|       14|
+    |xleft_c35_U               |        0|  5|   0|    -|     4|   32|      128|
+    |xleft_c_U                 |        0|  5|   0|    -|     4|   32|      128|
+    |xright_c36_U              |        0|  5|   0|    -|     4|   32|      128|
+    |xright_c_U                |        0|  5|   0|    -|     4|   32|      128|
+    |ydown_c38_U               |        0|  5|   0|    -|     4|   32|      128|
+    |ydown_c_U                 |        0|  5|   0|    -|     4|   32|      128|
+    |ytop_c37_U                |        0|  5|   0|    -|     4|   32|      128|
+    |ytop_c_U                  |        0|  5|   0|    -|     4|   32|      128|
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+    |Total                     |        0|185|   0|    0|   102|  550|     1852|
+    +--------------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |AXIvideo2Mat_U0_ap_ready_count            |     +    |      0|  0|  10|           2|           1|
+    |Block_Mat_exit22_pro_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |AXIvideo2Mat_U0_ap_start                  |    and   |      0|  0|   2|           1|           1|
+    |Block_Mat_exit22_pro_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |Block_Mat_exit22_pro_U0_start_full_n      |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                   |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_done                              |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                             |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_AXIvideo2Mat_U0_ap_ready          |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Block_Mat_exit22_pro_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                     |          |      0|  0|  36|          12|          10|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                     | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |AXIvideo2Mat_U0_ap_ready_count                |   9|          2|    2|          4|
+    |Block_Mat_exit22_pro_U0_ap_ready_count        |   9|          2|    2|          4|
+    |ap_sync_reg_AXIvideo2Mat_U0_ap_ready          |   9|          2|    1|          2|
+    |ap_sync_reg_Block_Mat_exit22_pro_U0_ap_ready  |   9|          2|    1|          2|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                         |  36|          8|    6|         12|
+    +----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+---+----+-----+-----------+
+    |                     Name                     | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------+---+----+-----+-----------+
+    |AXIvideo2Mat_U0_ap_ready_count                |  2|   0|    2|          0|
+    |Block_Mat_exit22_pro_U0_ap_ready_count        |  2|   0|    2|          0|
+    |ap_sync_reg_AXIvideo2Mat_U0_ap_ready          |  1|   0|    1|          0|
+    |ap_sync_reg_Block_Mat_exit22_pro_U0_ap_ready  |  1|   0|    1|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+    |Total                                         |  6|   0|    6|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++------------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    6|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    6|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |         box        | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |         box        | return value |
+|interrupt               | out |    1| ap_ctrl_hs |         box        | return value |
+|buffer_V_Addr_A         | out |   32|    bram    |      buffer_V      |     array    |
+|buffer_V_EN_A           | out |    1|    bram    |      buffer_V      |     array    |
+|buffer_V_Din_A          | out |   32|    bram    |      buffer_V      |     array    |
+|buffer_V_Dout_A         |  in |   32|    bram    |      buffer_V      |     array    |
+|buffer_V_WEN_A          | out |    4|    bram    |      buffer_V      |     array    |
+|buffer_V_Clk_A          | out |    1|    bram    |      buffer_V      |     array    |
+|buffer_V_Rst_A          | out |    1|    bram    |      buffer_V      |     array    |
+|buffer_V_Addr_B         | out |   32|    bram    |      buffer_V      |     array    |
+|buffer_V_EN_B           | out |    1|    bram    |      buffer_V      |     array    |
+|buffer_V_Din_B          | out |   32|    bram    |      buffer_V      |     array    |
+|buffer_V_Dout_B         |  in |   32|    bram    |      buffer_V      |     array    |
+|buffer_V_WEN_B          | out |    4|    bram    |      buffer_V      |     array    |
+|buffer_V_Clk_B          | out |    1|    bram    |      buffer_V      |     array    |
+|buffer_V_Rst_B          | out |    1|    bram    |      buffer_V      |     array    |
+|video_src_TDATA         |  in |   32|    axis    | video_src_V_data_V |    pointer   |
+|video_src_TKEEP         |  in |    4|    axis    | video_src_V_keep_V |    pointer   |
+|video_src_TSTRB         |  in |    4|    axis    | video_src_V_strb_V |    pointer   |
+|video_src_TUSER         |  in |    1|    axis    | video_src_V_user_V |    pointer   |
+|video_src_TLAST         |  in |    1|    axis    | video_src_V_last_V |    pointer   |
+|video_src_TID           |  in |    1|    axis    |  video_src_V_id_V  |    pointer   |
+|video_src_TDEST         |  in |    1|    axis    | video_src_V_dest_V |    pointer   |
+|video_src_TVALID        |  in |    1|    axis    | video_src_V_dest_V |    pointer   |
+|video_src_TREADY        | out |    1|    axis    | video_src_V_dest_V |    pointer   |
+|video_dst_TDATA         | out |   32|    axis    | video_dst_V_data_V |    pointer   |
+|video_dst_TKEEP         | out |    4|    axis    | video_dst_V_keep_V |    pointer   |
+|video_dst_TSTRB         | out |    4|    axis    | video_dst_V_strb_V |    pointer   |
+|video_dst_TUSER         | out |    1|    axis    | video_dst_V_user_V |    pointer   |
+|video_dst_TLAST         | out |    1|    axis    | video_dst_V_last_V |    pointer   |
+|video_dst_TID           | out |    1|    axis    |  video_dst_V_id_V  |    pointer   |
+|video_dst_TDEST         | out |    1|    axis    | video_dst_V_dest_V |    pointer   |
+|video_dst_TVALID        | out |    1|    axis    | video_dst_V_dest_V |    pointer   |
+|video_dst_TREADY        |  in |    1|    axis    | video_dst_V_dest_V |    pointer   |
++------------------------+-----+-----+------------+--------------------+--------------+
+

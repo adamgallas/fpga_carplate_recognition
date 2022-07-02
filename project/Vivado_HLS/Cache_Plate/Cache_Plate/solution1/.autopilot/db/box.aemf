@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1597755009093">
+  <ports id="1" name="buffer_V" type="PortType" originalName="buffer.V" coreName="RAM" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="3600">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="2" name="video_src_V_data_V" type="PortType" originalName="video_src.V.data.V" bitwidth="32">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="video_src_V_keep_V" type="PortType" originalName="video_src.V.keep.V" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="video_src_V_strb_V" type="PortType" originalName="video_src.V.strb.V" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="video_src_V_user_V" type="PortType" originalName="video_src.V.user.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="video_src_V_last_V" type="PortType" originalName="video_src.V.last.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="video_src_V_id_V" type="PortType" originalName="video_src.V.id.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="8" name="video_src_V_dest_V" type="PortType" originalName="video_src.V.dest.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="9" name="video_dst_V_data_V" type="PortType" originalName="video_dst.V.data.V" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="10" name="video_dst_V_keep_V" type="PortType" originalName="video_dst.V.keep.V" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="11" name="video_dst_V_strb_V" type="PortType" originalName="video_dst.V.strb.V" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="12" name="video_dst_V_user_V" type="PortType" originalName="video_dst.V.user.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="13" name="video_dst_V_last_V" type="PortType" originalName="video_dst.V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="14" name="video_dst_V_id_V" type="PortType" originalName="video_dst.V.id.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="15" name="video_dst_V_dest_V" type="PortType" originalName="video_dst.V.dest.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="16" name="xleft_s" type="PortType" originalName="xleft_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="17" name="xright_s" type="PortType" originalName="xright_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="18" name="ytop_s" type="PortType" originalName="ytop_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="19" name="ydown_s" type="PortType" originalName="ydown_" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="177" source_obj="//@ports.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="179" source_obj="//@ports.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="181" source_obj="//@ports.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="183" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="227" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="228" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="233" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="239" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="244" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="245" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="246" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="247" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="248" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="249" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="250" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="257" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="260" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="266" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="268" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="269" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="274" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="275" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="276" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="278" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="279" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="280" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="281" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="282" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="285" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="286" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="287" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="288" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="289" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="290" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="291" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="292" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="293" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="294" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="295" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="296" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="299" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="300" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="303" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@ports.0"/>
+  <edges id="308" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="311" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="313" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="314" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="315" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="316" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="317" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="318" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="319" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="320" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="323" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="324" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="325" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="326" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.8"/>
+  <edges id="327" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.9"/>
+  <edges id="328" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.10"/>
+  <edges id="329" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.11"/>
+  <edges id="330" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.12"/>
+  <edges id="331" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.13"/>
+  <edges id="332" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.14"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" id="819" RegionName="box">
+    <basic_blocks id="174" name="box" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="ydown_read" originalName="ydown_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataInputObjs>ydown_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="ytop_read" originalName="ytop_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>ytop_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="xright_read" originalName="xright_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>xright_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="xleft_read" originalName="xleft_" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>xleft_s</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="standard_plate_cols_s" rtlName="standard_plate_cols_s_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="standard_plate_rows_s" rtlName="standard_plate_rows_s_U" coreName="FIFO" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="rgb_img_cols_V_c40" rtlName="rgb_img_cols_V_c40_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="rgb_img_rows_V_c39" rtlName="rgb_img_rows_V_c39_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="standard_plate_cols_1" rtlName="standard_plate_cols_1_U" coreName="FIFO" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="standard_plate_rows_1" rtlName="standard_plate_rows_1_U" coreName="FIFO" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="plate_cols_V_c" rtlName="plate_cols_V_c_U" coreName="FIFO" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="plate_rows_V_c" rtlName="plate_rows_V_c_U" coreName="FIFO" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="rgb_img_cols_V_c" rtlName="rgb_img_cols_V_c_U" coreName="FIFO" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="rgb_img_rows_V_c" rtlName="rgb_img_rows_V_c_U" coreName="FIFO" bitwidth="11" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="ydown_c38" lineNumber="21" fileName="top.cpp" fileDirectory=".." rtlName="ydown_c38_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="21" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="ydown_c" lineNumber="21" fileName="top.cpp" fileDirectory=".." rtlName="ydown_c_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="21" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="ytop_c37" lineNumber="20" fileName="top.cpp" fileDirectory=".." rtlName="ytop_c37_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="20" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="ytop_c" lineNumber="20" fileName="top.cpp" fileDirectory=".." rtlName="ytop_c_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="20" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="xright_c36" lineNumber="19" fileName="top.cpp" fileDirectory=".." rtlName="xright_c36_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="19" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="xright_c" lineNumber="19" fileName="top.cpp" fileDirectory=".." rtlName="xright_c_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="19" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="xleft_c35" lineNumber="18" fileName="top.cpp" fileDirectory=".." rtlName="xleft_c35_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="18" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="xleft_c" lineNumber="18" fileName="top.cpp" fileDirectory=".." rtlName="xleft_c_U" coreName="FIFO" contextFuncName="box" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="18" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="rgb_img_data_stream_s" lineNumber="28" originalName="rgb_img.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="rgb_img_data_stream_s_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="28" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="rgb_img_data_stream_1" lineNumber="28" originalName="rgb_img.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="rgb_img_data_stream_1_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="28" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="rgb_img_data_stream_2" lineNumber="28" originalName="rgb_img.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="rgb_img_data_stream_2_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="28" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="copy1_data_stream_0" lineNumber="29" originalName="copy1.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="copy1_data_stream_0_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="29" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="copy1_data_stream_1" lineNumber="29" originalName="copy1.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="copy1_data_stream_1_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="29" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="copy1_data_stream_2" lineNumber="29" originalName="copy1.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="copy1_data_stream_2_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="29" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="copy2_data_stream_0" lineNumber="30" originalName="copy2.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="copy2_data_stream_0_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="30" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="copy2_data_stream_1" lineNumber="30" originalName="copy2.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="copy2_data_stream_1_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="30" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="copy2_data_stream_2" lineNumber="30" originalName="copy2.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="copy2_data_stream_2_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="30" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="output_img_data_stre" lineNumber="31" originalName="output_img.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_data_stre_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="31" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="output_img_data_stre_1" lineNumber="31" originalName="output_img.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_data_stre_1_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="31" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="output_img_data_stre_2" lineNumber="31" originalName="output_img.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="output_img_data_stre_2_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="31" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="plate_data_stream_0" lineNumber="33" originalName="plate.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="plate_data_stream_0_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="33" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="plate_data_stream_1" lineNumber="33" originalName="plate.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="plate_data_stream_1_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="33" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="plate_data_stream_2" lineNumber="33" originalName="plate.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="plate_data_stream_2_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="33" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="standard_plate_data_s" lineNumber="34" originalName="standard_plate.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="standard_plate_data_s_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="34" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="standard_plate_data_1" lineNumber="34" originalName="standard_plate.data_stream[1].V" fileName="top.cpp" fileDirectory=".." rtlName="standard_plate_data_1_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="34" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="standard_plate_data_2" lineNumber="34" originalName="standard_plate.data_stream[2].V" fileName="top.cpp" fileDirectory=".." rtlName="standard_plate_data_2_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="34" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="gray_plate_data_stre" lineNumber="35" originalName="gray_plate.data_stream[0].V" fileName="top.cpp" fileDirectory=".." rtlName="gray_plate_data_stre_U" coreName="FIFO" contextFuncName="box" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="35" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="_ln18" lineNumber="18" fileName="top.cpp" fileDirectory=".." rtlName="Block_Mat_exit22_pro_U0" contextFuncName="box" opcode="call" m_display="0" m_delay="8.0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="18" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Block_Mat_exit22_pro</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="161" name="_ln39" lineNumber="39" fileName="top.cpp" fileDirectory=".." rtlName="AXIvideo2Mat_U0" contextFuncName="box" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="39" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>video_src_V_data_V</dataInputObjs>
+        <dataInputObjs>video_src_V_keep_V</dataInputObjs>
+        <dataInputObjs>video_src_V_strb_V</dataInputObjs>
+        <dataInputObjs>video_src_V_user_V</dataInputObjs>
+        <dataInputObjs>video_src_V_last_V</dataInputObjs>
+        <dataInputObjs>video_src_V_id_V</dataInputObjs>
+        <dataInputObjs>video_src_V_dest_V</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>AXIvideo2Mat</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="162" name="_ln40" lineNumber="40" fileName="top.cpp" fileDirectory=".." rtlName="Duplicate_U0" contextFuncName="box" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="40" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Duplicate</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="163" name="_ln42" lineNumber="42" fileName="top.cpp" fileDirectory=".." rtlName="Return_Plate_U0" contextFuncName="box" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="42" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Return_Plate</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="168" name="_ln43" lineNumber="43" fileName="top.cpp" fileDirectory=".." rtlName="Resize_U0" contextFuncName="box" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="43" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Resize</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="_ln44" lineNumber="44" fileName="top.cpp" fileDirectory=".." rtlName="CvtColor_U0" contextFuncName="box" opcode="call" nodeLabel="9.0" nodeLatency="1" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="44" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>CvtColor</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="170" name="_ln0" rtlName="Loop_BRAM_LOOP_proc1_U0" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>buffer_V</dataOutputObjs>
+        <constName>Loop_BRAM_LOOP_proc1</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="_ln55" lineNumber="55" fileName="top.cpp" fileDirectory=".." rtlName="Add_Rectangle_U0" contextFuncName="box" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="55" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Add_Rectangle</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="172" name="_ln56" lineNumber="56" fileName="top.cpp" fileDirectory=".." rtlName="Mat2AXIvideo_U0" contextFuncName="box" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="56" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>video_dst_V_data_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_user_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_last_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_id_V</dataOutputObjs>
+        <dataOutputObjs>video_dst_V_dest_V</dataOutputObjs>
+        <constName>Mat2AXIvideo</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="173" name="_ln57" lineNumber="57" fileName="top.cpp" fileDirectory=".." contextFuncName="box" opcode="ret" nodeLabel="12.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="top.cpp" linenumber="57" fileDirectory="D:\ADAM_GALLAS\materials\01_Vivado_HLS\Cache_Plate" functionName="box"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="top.cpp">
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>20</validLinenumbers>
+        <validLinenumbers>19</validLinenumbers>
+        <validLinenumbers>18</validLinenumbers>
+        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>29</validLinenumbers>
+        <validLinenumbers>30</validLinenumbers>
+        <validLinenumbers>31</validLinenumbers>
+        <validLinenumbers>33</validLinenumbers>
+        <validLinenumbers>34</validLinenumbers>
+        <validLinenumbers>35</validLinenumbers>
+        <validLinenumbers>39</validLinenumbers>
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
+        <validLinenumbers>44</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>56</validLinenumbers>
+        <validLinenumbers>57</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <regnodes realName="copy2_data_stream_2_reg_1166">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="xleft_c35_reg_1106">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_rows_V_c_reg_1064">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_data_1_reg_1214">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="plate_rows_V_c_reg_1052">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_cols_s_reg_1010">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_data_2_reg_1220">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_cols_V_c_reg_1058">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_cols_V_c40_reg_1022">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="xright_c36_reg_1094">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_data_stre_reg_1172">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="copy2_data_stream_0_reg_1154">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="xleft_c_reg_1112">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_data_s_reg_1208">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="ydown_c38_reg_1070">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="ydown_c_reg_1076">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="plate_data_stream_1_reg_1196">
+    <nodeIds>102</nodeIds>
+  </regnodes>
+  <regnodes realName="xright_c_reg_1100">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="copy2_data_stream_1_reg_1160">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_data_stream_s_reg_1118">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_rows_1_reg_1040">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_data_stream_2_reg_1130">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="copy1_data_stream_2_reg_1148">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_data_stre_1_reg_1178">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="gray_plate_data_stre_reg_1226">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_rows_s_reg_1016">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_data_stream_1_reg_1124">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="ytop_c37_reg_1082">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="output_img_data_stre_2_reg_1184">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="standard_plate_cols_1_reg_1034">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="plate_cols_V_c_reg_1046">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="plate_data_stream_0_reg_1190">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="copy1_data_stream_0_reg_1136">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="rgb_img_rows_V_c39_reg_1028">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="copy1_data_stream_1_reg_1142">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="ytop_c_reg_1088">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="plate_data_stream_2_reg_1202">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <expressionNodes realName="output_img_data_stre_fu_798">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_rows_1_fu_710">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="copy1_data_stream_2_fu_782">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_rows_V_c_fu_726">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_data_stream_1_fu_766">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xleft_c_fu_758">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ytop_c_fu_742">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="plate_cols_V_c_fu_714">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_data_2_fu_830">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_rows_V_c39_fu_702">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ydown_c38_fu_730">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_data_stream_s_fu_762">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_cols_1_fu_706">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_data_1_fu_826">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ydown_c_fu_734">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_rows_s_fu_694">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xright_c36_fu_746">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ytop_c37_fu_738">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="copy1_data_stream_0_fu_774">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_data_s_fu_822">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="copy1_data_stream_1_fu_778">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gray_plate_data_stre_fu_834">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xright_c_fu_750">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="copy2_data_stream_0_fu_786">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="plate_rows_V_c_fu_718">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xleft_c35_fu_754">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="plate_data_stream_0_fu_810">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_data_stre_2_fu_806">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="output_img_data_stre_1_fu_802">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_data_stream_2_fu_770">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_cols_V_c40_fu_698">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="standard_plate_cols_s_fu_690">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="copy2_data_stream_1_fu_790">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rgb_img_cols_V_c_fu_722">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="plate_data_stream_1_fu_814">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="plate_data_stream_2_fu_818">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="copy2_data_stream_2_fu_794">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_Duplicate_fu_931">
+    <nodeIds>162</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln18_Block_Mat_exit22_pro_fu_956">
+    <nodeIds>156</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_AXIvideo2Mat_fu_892">
+    <nodeIds>161</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_CvtColor_fu_946">
+    <nodeIds>169</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Return_Plate_fu_917">
+    <nodeIds>163</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Add_Rectangle_fu_878">
+    <nodeIds>171</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Resize_fu_862">
+    <nodeIds>168</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Mat2AXIvideo_fu_982">
+    <nodeIds>172</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_BRAM_LOOP_proc1_fu_1003">
+    <nodeIds>170</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="xright_read_read_fu_850">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ydown_read_read_fu_838">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="xleft_read_read_fu_856">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ytop_read_read_fu_844">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioPorts name="video_dst_V_data_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_dest_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_id_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_keep_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_last_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_strb_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_dst_V_user_V">
+    <contents name="call">
+      <nodeIds>172</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_data_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_dest_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_id_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_keep_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_last_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_strb_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="video_src_V_user_V">
+    <contents name="call">
+      <nodeIds>161</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="xleft_s">
+    <contents name="read">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="xright_s">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ydown_s">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ytop_s">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="161" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="161" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="162" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="162" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="163" stage="2" latency="2"/>
+      <operations id="171" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="163" stage="1" latency="2"/>
+      <operations id="171" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="168" stage="2" latency="2"/>
+      <operations id="172" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="168" stage="1" latency="2"/>
+      <operations id="172" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="169" stage="2" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="169" stage="1" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="170" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="2"/>
+      <operations id="173" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="box" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="924487" mMaxLatency="1075150859" mIsDfPipe="true">
+      <basicBlocks>174</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.2/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.3/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.4/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.5/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.6/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.7/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.8/@pins.0/@inst">
+        <processe_list name="Block_Mat_exit22_pro_U0" ssdmobj_id="156">
+          <pins>
+            <port name="xleft_s" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="xright_s" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="ytop_s" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="ydown_s" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="xleft_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="xleft_out1" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="xright_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="xright_out2" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="ytop_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="ytop_out3" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="ydown_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="ydown_out4" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="rgb_img_rows_V_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="rgb_img_cols_V_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="plate_rows_V_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="plate_cols_V_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="standard_plate_rows_V_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+          <pins>
+            <port name="standard_plate_cols_V_out" type="BUSType"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </pins>
+        </processe_list>
+        <processe_list name="AXIvideo2Mat_U0" ssdmobj_id="161">
+          <pins>
+            <port name="AXI_video_strm_V_data_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_keep_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_strb_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_user_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_last_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_id_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_dest_V" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_rows_V"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_cols_V"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_0_V" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_1_V" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_2_V" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_rows_V_out" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+          <pins>
+            <port name="img_cols_V_out" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Duplicate_U0" ssdmobj_id="162">
+          <pins>
+            <port name="src_rows_V"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="src_cols_V"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_0_V"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_1_V"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_2_V"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="dst1_data_stream_0_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="dst1_data_stream_1_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="dst1_data_stream_2_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="dst2_data_stream_0_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="dst2_data_stream_1_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+          <pins>
+            <port name="dst2_data_stream_2_V" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Return_Plate_U0" ssdmobj_id="163">
+          <pins>
+            <port name="input_img_data_stream_0_V"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="input_img_data_stream_1_V"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="input_img_data_stream_2_V"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="output_plate_data_stream_0_V" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="output_plate_data_stream_1_V" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="output_plate_data_stream_2_V" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="xleft"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="xright"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="ytop"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+          <pins>
+            <port name="ydown"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Resize_U0" ssdmobj_id="168">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_0_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_1_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_2_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_rows_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_cols_V"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_0_V" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_1_V" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_2_V" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_rows_V_out" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+          <pins>
+            <port name="p_dst_cols_V_out" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </pins>
+        </processe_list>
+        <processe_list name="CvtColor_U0" ssdmobj_id="169">
+          <pins>
+            <port name="p_src_rows_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </pins>
+          <pins>
+            <port name="p_src_cols_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_0_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_1_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </pins>
+          <pins>
+            <port name="p_src_data_stream_2_V"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </pins>
+          <pins>
+            <port name="p_dst_data_stream_V" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Loop_BRAM_LOOP_proc1_U0" ssdmobj_id="170">
+          <pins>
+            <port name="buffer_V" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_BRAM_LOOP_proc1_U0" ssdmobj_id="170" object_id="_398"/>
+          </pins>
+          <pins>
+            <port name="gray_plate_data_stream_0_V"/>
+            <inst name="Loop_BRAM_LOOP_proc1_U0" ssdmobj_id="170" object_id="_398"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Add_Rectangle_U0" ssdmobj_id="171">
+          <pins>
+            <port name="src_data_stream_0_V"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_1_V"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="src_data_stream_2_V"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_0_V" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_1_V" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="dst_data_stream_2_V" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="xleft"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="xright"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="ytop"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+          <pins>
+            <port name="ydown"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Mat2AXIvideo_U0" ssdmobj_id="172">
+          <pins>
+            <port name="img_data_stream_0_V"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_1_V"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="img_data_stream_2_V"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_data_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_keep_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_strb_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_user_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_last_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_id_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+          <pins>
+            <port name="AXI_video_strm_V_dest_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="4" bitwidth="32" name="xleft_c" ssdmobj_id="41">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="xleft_c35" ssdmobj_id="40">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="xright_c" ssdmobj_id="39">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="xright_c36" ssdmobj_id="38">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="ytop_c" ssdmobj_id="37">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="ytop_c37" ssdmobj_id="36">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="ydown_c" ssdmobj_id="35">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="4" bitwidth="32" name="ydown_c38" ssdmobj_id="34">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="11" name="rgb_img_rows_V_c" ssdmobj_id="33">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="12" name="rgb_img_cols_V_c" ssdmobj_id="32">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="5" bitwidth="32" name="plate_rows_V_c" ssdmobj_id="31">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="5" bitwidth="32" name="plate_cols_V_c" ssdmobj_id="30">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="5" bitwidth="7" name="standard_plate_rows_1" ssdmobj_id="29">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="5" bitwidth="9" name="standard_plate_cols_1" ssdmobj_id="28">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Block_Mat_exit22_pro_U0" ssdmobj_id="156" object_id="_244"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rgb_img_data_stream_s" ssdmobj_id="63">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rgb_img_data_stream_1" ssdmobj_id="66">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="rgb_img_data_stream_2" ssdmobj_id="69">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="11" name="rgb_img_rows_V_c39" ssdmobj_id="27">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="12" name="rgb_img_cols_V_c40" ssdmobj_id="26">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="AXIvideo2Mat_U0" ssdmobj_id="161" object_id="_282"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="copy1_data_stream_0" ssdmobj_id="72">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="copy1_data_stream_1" ssdmobj_id="75">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="copy1_data_stream_2" ssdmobj_id="78">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="copy2_data_stream_0" ssdmobj_id="81">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="copy2_data_stream_1" ssdmobj_id="84">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="copy2_data_stream_2" ssdmobj_id="87">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Duplicate_U0" ssdmobj_id="162" object_id="_312"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="plate_data_stream_0" ssdmobj_id="99">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="plate_data_stream_1" ssdmobj_id="102">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="plate_data_stream_2" ssdmobj_id="105">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Return_Plate_U0" ssdmobj_id="163" object_id="_336"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="standard_plate_data_s" ssdmobj_id="108">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="standard_plate_data_1" ssdmobj_id="111">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="standard_plate_data_2" ssdmobj_id="114">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="7" name="standard_plate_rows_s" ssdmobj_id="25">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="9" name="standard_plate_cols_s" ssdmobj_id="24">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Resize_U0" ssdmobj_id="168" object_id="_358"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="gray_plate_data_stre" ssdmobj_id="117">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="CvtColor_U0" ssdmobj_id="169" object_id="_384"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_BRAM_LOOP_proc1_U0" ssdmobj_id="170" object_id="_398"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_data_stre" ssdmobj_id="90">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_data_stre_1" ssdmobj_id="93">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="8" name="output_img_data_stre_2" ssdmobj_id="96">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Add_Rectangle_U0" ssdmobj_id="171" object_id="_404"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Mat2AXIvideo_U0" ssdmobj_id="172" object_id="_426"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

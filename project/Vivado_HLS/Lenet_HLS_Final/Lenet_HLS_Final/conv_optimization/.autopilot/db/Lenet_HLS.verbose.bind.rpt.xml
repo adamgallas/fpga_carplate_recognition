@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Lenet_HLS'" level="0">
+<item name = "Date">Wed Aug 19 09:56:49 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Lenet_HLS_Final</item>
+<item name = "Solution">conv_optimization</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.747 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2935322, 2978666, 29.353 ms, 29.787 ms, 2935322, 2978666, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Fullc1_Cal_fu_343">Fullc1_Cal, 168841, 212185, 1.688 ms, 2.122 ms, 168841, 212185, none</column>
+<column name="grp_Conv2_Cal_fu_359">Conv2_Cal, 1772182, 1772182, 17.722 ms, 17.722 ms, 1772182, 1772182, none</column>
+<column name="grp_Conv1_Cal_fu_371">Conv1_Cal, 906822, 906822, 9.068 ms, 9.068 ms, 906822, 906822, none</column>
+<column name="grp_Pool1_Cal_fu_383">Pool1_Cal, 8413, 8413, 84.130 us, 84.130 us, 8413, 8413, none</column>
+<column name="grp_Pool2_Cal_fu_391">Pool2_Cal, 2993, 2993, 29.930 us, 29.930 us, 2993, 2993, none</column>
+<column name="grp_Fullc2_Cal_fu_399">Fullc2_Cal, 27496, 27496, 0.275 ms, 0.275 ms, 27496, 27496, none</column>
+<column name="grp_Flatten_Layer_fu_411">Flatten_Layer, 1261, 1261, 12.610 us, 12.610 us, 1261, 1261, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- COPY">1024, 1024, 1, -, -, 1024, no</column>
+<column name="- LOAD_ROW">46144, 46144, 1442, -, -, 32, no</column>
+<column name=" + LOAD_COL">1440, 1440, 45, -, -, 32, no</column>
+<column name="- BIGGEST">130, 130, 2, -, -, 65, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

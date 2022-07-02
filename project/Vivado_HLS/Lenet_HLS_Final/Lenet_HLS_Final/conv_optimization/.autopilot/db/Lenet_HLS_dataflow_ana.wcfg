@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Lenet_HLS.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_Lenet_HLS_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS//AESL_inst_Lenet_HLS_activity">
+         <obj_property name="label">AESL_inst_Lenet_HLS_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_Lenet_HLS_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_Lenet_HLS_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS//AESL_inst_Lenet_HLS_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS//AESL_inst_Lenet_HLS_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS//AESL_inst_Lenet_HLS_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_Fullc1_Cal_fu_343_activity">
+            <obj_property name="label">grp_Fullc1_Cal_fu_343_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Fullc1_Cal_fu_343_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Fullc1_Cal_fu_343_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_Fullc1_Cal_fu_343_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_Fullc1_Cal_fu_343_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_Fullc1_Cal_fu_343_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/grp_my_tanh_fu_165_activity">
+               <obj_property name="label">grp_my_tanh_fu_165_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_my_tanh_fu_165_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_my_tanh_fu_165_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/grp_my_tanh_fu_165_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/grp_my_tanh_fu_165_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/grp_my_tanh_fu_165_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/grp_Conv2_Cal_fu_359_activity">
+            <obj_property name="label">grp_Conv2_Cal_fu_359_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Conv2_Cal_fu_359_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Conv2_Cal_fu_359_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/grp_Conv2_Cal_fu_359_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/grp_Conv2_Cal_fu_359_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/grp_Conv2_Cal_fu_359_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/grp_Conv1_Cal_fu_371_activity">
+            <obj_property name="label">grp_Conv1_Cal_fu_371_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Conv1_Cal_fu_371_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Conv1_Cal_fu_371_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/grp_Conv1_Cal_fu_371_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/grp_Conv1_Cal_fu_371_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/grp_Conv1_Cal_fu_371_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/grp_Pool1_Cal_fu_383_activity">
+            <obj_property name="label">grp_Pool1_Cal_fu_383_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Pool1_Cal_fu_383_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Pool1_Cal_fu_383_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/grp_Pool1_Cal_fu_383_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/grp_Pool1_Cal_fu_383_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/grp_Pool1_Cal_fu_383_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/grp_Pool2_Cal_fu_391_activity">
+            <obj_property name="label">grp_Pool2_Cal_fu_391_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Pool2_Cal_fu_391_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Pool2_Cal_fu_391_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/grp_Pool2_Cal_fu_391_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/grp_Pool2_Cal_fu_391_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/grp_Pool2_Cal_fu_391_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/grp_Fullc2_Cal_fu_399_activity">
+            <obj_property name="label">grp_Fullc2_Cal_fu_399_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Fullc2_Cal_fu_399_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Fullc2_Cal_fu_399_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/grp_Fullc2_Cal_fu_399_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/grp_Fullc2_Cal_fu_399_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/grp_Fullc2_Cal_fu_399_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/grp_Flatten_Layer_fu_411_activity">
+            <obj_property name="label">grp_Flatten_Layer_fu_411_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_Flatten_Layer_fu_411_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_Flatten_Layer_fu_411_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/grp_Flatten_Layer_fu_411_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/grp_Flatten_Layer_fu_411_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/grp_Flatten_Layer_fu_411_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS//AESL_inst_Lenet_HLS_activity">
+      <obj_property name="ElementShortName">AESL_inst_Lenet_HLS_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_Lenet_HLS_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_Lenet_HLS_group">
+      <obj_property name="label">AESL_inst_Lenet_HLS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_Fullc1_Cal_fu_343_activity">
+         <obj_property name="ElementShortName">grp_Fullc1_Cal_fu_343_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Fullc1_Cal_fu_343_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/grp_Conv2_Cal_fu_359_activity">
+         <obj_property name="ElementShortName">grp_Conv2_Cal_fu_359_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Conv2_Cal_fu_359_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/grp_Conv1_Cal_fu_371_activity">
+         <obj_property name="ElementShortName">grp_Conv1_Cal_fu_371_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Conv1_Cal_fu_371_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/grp_Pool1_Cal_fu_383_activity">
+         <obj_property name="ElementShortName">grp_Pool1_Cal_fu_383_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Pool1_Cal_fu_383_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/grp_Pool2_Cal_fu_391_activity">
+         <obj_property name="ElementShortName">grp_Pool2_Cal_fu_391_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Pool2_Cal_fu_391_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/grp_Fullc2_Cal_fu_399_activity">
+         <obj_property name="ElementShortName">grp_Fullc2_Cal_fu_399_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Fullc2_Cal_fu_399_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/grp_Flatten_Layer_fu_411_activity">
+         <obj_property name="ElementShortName">grp_Flatten_Layer_fu_411_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_Flatten_Layer_fu_411_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_Lenet_HLS_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Fullc1_Cal_fu_343_group">
+         <obj_property name="label">grp_Fullc1_Cal_fu_343</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/grp_my_tanh_fu_165_activity">
+            <obj_property name="ElementShortName">grp_my_tanh_fu_165_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_my_tanh_fu_165_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_Fullc1_Cal_fu_343_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_my_tanh_fu_165_group">
+            <obj_property name="label">grp_my_tanh_fu_165</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_my_tanh_fu_165_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc1_Cal_fu_343/grp_my_tanh_fu_165/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Conv2_Cal_fu_359_group">
+         <obj_property name="label">grp_Conv2_Cal_fu_359</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_Conv2_Cal_fu_359_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv2_Cal_fu_359/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Conv1_Cal_fu_371_group">
+         <obj_property name="label">grp_Conv1_Cal_fu_371</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_Conv1_Cal_fu_371_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Conv1_Cal_fu_371/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Pool1_Cal_fu_383_group">
+         <obj_property name="label">grp_Pool1_Cal_fu_383</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_Pool1_Cal_fu_383_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool1_Cal_fu_383/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Pool2_Cal_fu_391_group">
+         <obj_property name="label">grp_Pool2_Cal_fu_391</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_Pool2_Cal_fu_391_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Pool2_Cal_fu_391/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Fullc2_Cal_fu_399_group">
+         <obj_property name="label">grp_Fullc2_Cal_fu_399</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_Fullc2_Cal_fu_399_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Fullc2_Cal_fu_399/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_Flatten_Layer_fu_411_group">
+         <obj_property name="label">grp_Flatten_Layer_fu_411</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_Flatten_Layer_fu_411_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_Lenet_HLS_top/AESL_inst_Lenet_HLS/grp_Flatten_Layer_fu_411/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

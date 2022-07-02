@@ -1,0 +1,72 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../testbench/test_tb.cpp in debug mode
+   Generating csim.exe
+test_image_bin_00.bin 0.951852
+test_image_bin_01.bin 0.989474
+test_image_bin_02.bin 0.986667
+test_image_bin_03.bin 0.996429
+test_image_bin_04.bin 1
+test_image_bin_05.bin 0.975
+test_image_bin_06.bin 1
+test_image_bin_07.bin 0.996429
+test_image_bin_08.bin 0.99375
+test_image_bin_09.bin 0.996875
+test_image_bin_10.bin 0.989474
+test_image_bin_11.bin 0.934911
+test_image_bin_12.bin 0.988889
+test_image_bin_13.bin 0.875
+test_image_bin_14.bin 0.9375
+test_image_bin_15.bin 0.957143
+test_image_bin_16.bin 0.925
+test_image_bin_17.bin 0.914286
+test_image_bin_18.bin 0.9875
+test_image_bin_19.bin 1
+test_image_bin_20.bin 0.983333
+test_image_bin_21.bin 1
+test_image_bin_22.bin 0.966667
+test_image_bin_23.bin 1
+test_image_bin_24.bin 0.985714
+test_image_bin_25.bin 1
+test_image_bin_26.bin 0.996667
+test_image_bin_27.bin 0.916667
+test_image_bin_28.bin 0.95
+test_image_bin_29.bin 0.966667
+test_image_bin_30.bin 0.96
+test_image_bin_31.bin 0.985714
+test_image_bin_32.bin 0.9625
+test_image_bin_33.bin 0.866667
+test_image_bin_34.bin 0.86
+test_image_bin_35.bin 0.7
+test_image_bin_36.bin 0.94
+test_image_bin_37.bin 0
+test_image_bin_38.bin 0.5
+test_image_bin_39.bin 0.583333
+test_image_bin_40.bin 0.4
+test_image_bin_41.bin 0.636364
+test_image_bin_42.bin 0.333333
+test_image_bin_43.bin 0.875
+test_image_bin_44.bin 0.866667
+test_image_bin_45.bin 1
+test_image_bin_46.bin 0.75
+test_image_bin_47.bin 0.583333
+test_image_bin_48.bin 0.75
+test_image_bin_49.bin 0.769231
+test_image_bin_50.bin 0.894737
+test_image_bin_51.bin 0.833333
+test_image_bin_52.bin 0.6
+test_image_bin_53.bin 0.6
+test_image_bin_54.bin 0.961538
+test_image_bin_55.bin 0.666667
+test_image_bin_56.bin 0.285714
+test_image_bin_57.bin 0
+test_image_bin_58.bin 0.692308
+test_image_bin_59.bin 1
+test_image_bin_60.bin 0.708333
+test_image_bin_61.bin 0.947368
+test_image_bin_62.bin 1
+test_image_bin_63.bin 0.777778
+test_image_bin_64.bin 0.636364
+total accuracy:1
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,33 @@
+2020-08-25T15:22:32.16198600255-15:22:32 **** Incremental Build of configuration Debug for project ov_carplate ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/sw/ov_carplate_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-../src/main.c: In function 'main':
+000/ov_carplate/src/main.c188-1-1pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]1-../src/main.c:188:23: warning: pointer targets in passing argument 3 of 'OLED_ShowString' differ in signedness [-Wpointer-sign]
+000-  OLED_ShowString(0,0, "Enter Main!");
+000-                       ^~~~~~~~~~~~~
+000-In file included from ../src/main.c:15:
+000/ov_carplate/src/oled.h53-1-1expected 'const u8 *' {aka 'const unsigned char *'} but argument is of type 'char *'0-../src/oled.h:53:6: note: expected 'const u8 *' {aka 'const unsigned char *'} but argument is of type 'char *'
+000- void OLED_ShowString(u8 x,u8 y,const u8 *p);
+000-      ^~~~~~~~~~~~~~~
+000-'Finished building: ../src/main.c'
+000-' '
+000-'Building target: ov_carplate.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Project/Vitis_Workplace/ov_carplate_wrapper/export/ov_carplate_wrapper/sw/ov_carplate_wrapper/standalone_domain/bsplib/lib -o "ov_carplate.elf"  ./src/I2C_16bit.o ./src/main.o ./src/oled.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: ov_carplate.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size ov_carplate.elf  |tee "ov_carplate.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000- 139948	   4824	 179432	 324204	  4f26c	ov_carplate.elf
+000-'Finished building: ov_carplate.elf.size'
+000-' '
+00255-
+15:22:33 Build Finished (took 1s.130ms)
+

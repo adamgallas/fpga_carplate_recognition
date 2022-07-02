@@ -1,0 +1,151 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Flatten_Layer'" level="0">
+<item name = "Date">Wed Aug 19 09:56:54 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Lenet_HLS_Final</item>
+<item name = "Solution">conv_optimization</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.396 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1261, 1261, 12.610 us, 12.610 us, 1261, 1261, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- FLAT_SIZE1">1260, 1260, 252, -, -, 5, no</column>
+<column name=" + FLAT_SIZE2">250, 250, 50, -, -, 5, no</column>
+<column name="  ++ FLAT_DEPTH">48, 48, 3, -, -, 16, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 161, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 92, -</column>
+<column name="Register">-, -, 89, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln203_10_fu_239_p2">+, 0, 0, 12, 10, 10</column>
+<column name="add_ln203_11_fu_245_p2">+, 0, 0, 12, 10, 10</column>
+<column name="add_ln203_9_fu_222_p2">+, 0, 0, 12, 8, 8</column>
+<column name="add_ln203_fu_216_p2">+, 0, 0, 12, 8, 8</column>
+<column name="add_ln220_1_fu_259_p2">+, 0, 0, 15, 9, 1</column>
+<column name="add_ln220_fu_178_p2">+, 0, 0, 15, 9, 5</column>
+<column name="i_fu_150_p2">+, 0, 0, 12, 3, 1</column>
+<column name="index_fu_156_p2">+, 0, 0, 15, 9, 7</column>
+<column name="j_fu_172_p2">+, 0, 0, 12, 3, 1</column>
+<column name="t_fu_194_p2">+, 0, 0, 15, 5, 1</column>
+<column name="icmp_ln214_fu_144_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln216_fu_166_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln218_fu_188_p2">icmp, 0, 0, 11, 5, 6</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">38, 7, 1, 7</column>
+<column name="i_0_reg_77">9, 2, 3, 6</column>
+<column name="index_0_reg_88">9, 2, 9, 18</column>
+<column name="index_1_reg_100">9, 2, 9, 18</column>
+<column name="index_2_reg_122">9, 2, 9, 18</column>
+<column name="j_0_reg_111">9, 2, 3, 6</column>
+<column name="t_0_reg_133">9, 2, 5, 10</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln203_11_reg_309">10, 0, 10, 0</column>
+<column name="add_ln220_reg_291">9, 0, 9, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="i_0_reg_77">3, 0, 3, 0</column>
+<column name="i_reg_268">3, 0, 3, 0</column>
+<column name="index_0_reg_88">9, 0, 9, 0</column>
+<column name="index_1_reg_100">9, 0, 9, 0</column>
+<column name="index_2_reg_122">9, 0, 9, 0</column>
+<column name="index_reg_273">9, 0, 9, 0</column>
+<column name="j_0_reg_111">3, 0, 3, 0</column>
+<column name="j_reg_286">3, 0, 3, 0</column>
+<column name="t_0_reg_133">5, 0, 5, 0</column>
+<column name="t_reg_304">5, 0, 5, 0</column>
+<column name="zext_ln216_reg_278">3, 0, 8, 5</column>
+<column name="zext_ln218_reg_296">3, 0, 10, 7</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Flatten_Layer, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Flatten_Layer, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Flatten_Layer, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Flatten_Layer, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Flatten_Layer, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Flatten_Layer, return value</column>
+<column name="layer5_V_address0">out, 9, ap_memory, layer5_V, array</column>
+<column name="layer5_V_ce0">out, 1, ap_memory, layer5_V, array</column>
+<column name="layer5_V_q0">in, 12, ap_memory, layer5_V, array</column>
+<column name="flatten1_V_address0">out, 9, ap_memory, flatten1_V, array</column>
+<column name="flatten1_V_ce0">out, 1, ap_memory, flatten1_V, array</column>
+<column name="flatten1_V_we0">out, 1, ap_memory, flatten1_V, array</column>
+<column name="flatten1_V_d0">out, 12, ap_memory, flatten1_V, array</column>
+</table>
+</item>
+</section>
+</profile>

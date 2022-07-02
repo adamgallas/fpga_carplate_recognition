@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="box.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_box_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">xleft___xright___ytop___ydown___return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/interrupt" type="logic">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_BRESP" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_BREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_BVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_RRESP" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_RDATA" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_RREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_RVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_ARREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_ARVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_ARADDR" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_WSTRB" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_WDATA" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_WREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_WVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_AWREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_AWVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/s_axi_AXILiteS_AWADDR" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group22" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group23" type="group">
+            <obj_property name="label">video_dst(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TREADY" type="logic">
+               <obj_property name="ElementShortName">video_dst_TREADY</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TVALID" type="logic">
+               <obj_property name="ElementShortName">video_dst_TVALID</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TDEST" type="array">
+               <obj_property name="ElementShortName">video_dst_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TID" type="array">
+               <obj_property name="ElementShortName">video_dst_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TLAST" type="array">
+               <obj_property name="ElementShortName">video_dst_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TUSER" type="array">
+               <obj_property name="ElementShortName">video_dst_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TSTRB" type="array">
+               <obj_property name="ElementShortName">video_dst_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TKEEP" type="array">
+               <obj_property name="ElementShortName">video_dst_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TKEEP[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_dst_TDATA" type="array">
+               <obj_property name="ElementShortName">video_dst_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">video_dst_TDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group33" type="group">
+            <obj_property name="label">buffer(bram)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Rst_B" type="logic">
+               <obj_property name="ElementShortName">buffer_V_Rst_B</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Rst_B</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Clk_B" type="logic">
+               <obj_property name="ElementShortName">buffer_V_Clk_B</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Clk_B</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_WEN_B" type="array">
+               <obj_property name="ElementShortName">buffer_V_WEN_B[3:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_WEN_B[3:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Dout_B" type="array">
+               <obj_property name="ElementShortName">buffer_V_Dout_B[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Dout_B[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Din_B" type="array">
+               <obj_property name="ElementShortName">buffer_V_Din_B[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Din_B[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_EN_B" type="logic">
+               <obj_property name="ElementShortName">buffer_V_EN_B</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_EN_B</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Addr_B" type="array">
+               <obj_property name="ElementShortName">buffer_V_Addr_B[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Addr_B[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Rst_A" type="logic">
+               <obj_property name="ElementShortName">buffer_V_Rst_A</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Rst_A</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Clk_A" type="logic">
+               <obj_property name="ElementShortName">buffer_V_Clk_A</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Clk_A</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_WEN_A" type="array">
+               <obj_property name="ElementShortName">buffer_V_WEN_A[3:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_WEN_A[3:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Dout_A" type="array">
+               <obj_property name="ElementShortName">buffer_V_Dout_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Dout_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Din_A" type="array">
+               <obj_property name="ElementShortName">buffer_V_Din_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Din_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_EN_A" type="logic">
+               <obj_property name="ElementShortName">buffer_V_EN_A</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_EN_A</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/buffer_V_Addr_A" type="array">
+               <obj_property name="ElementShortName">buffer_V_Addr_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">buffer_V_Addr_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group48" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group49" type="group">
+            <obj_property name="label">video_src(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TREADY" type="logic">
+               <obj_property name="ElementShortName">video_src_TREADY</obj_property>
+               <obj_property name="ObjectShortName">video_src_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TVALID" type="logic">
+               <obj_property name="ElementShortName">video_src_TVALID</obj_property>
+               <obj_property name="ObjectShortName">video_src_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TDEST" type="array">
+               <obj_property name="ElementShortName">video_src_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TID" type="array">
+               <obj_property name="ElementShortName">video_src_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TLAST" type="array">
+               <obj_property name="ElementShortName">video_src_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TUSER" type="array">
+               <obj_property name="ElementShortName">video_src_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TSTRB" type="array">
+               <obj_property name="ElementShortName">video_src_TSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TKEEP" type="array">
+               <obj_property name="ElementShortName">video_src_TKEEP[3:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TKEEP[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_box_top/AESL_inst_box/video_src_TDATA" type="array">
+               <obj_property name="ElementShortName">video_src_TDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">video_src_TDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group59" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_box_top/AESL_inst_box/ap_rst_n" type="logic">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group61" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_box_top/AESL_inst_box/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

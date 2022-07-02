@@ -1,0 +1,5 @@
+   Build using "D:/Program_Files/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling top.cpp_pre.cpp.tb.cpp
+   Compiling apatb_box.cpp
+   Generating cosim.tv.exe

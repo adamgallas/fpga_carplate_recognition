@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.1912530946">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.1912530946" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="a.exe" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.1912530946" name="Debug" parent="cdt.managedbuild.config.gnu.exe.debug">
+                    					
+                    <folderInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946." name="/" resourcePath="">
+                        						
+                        <toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1123124467" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
+                            							
+                            <targetPlatform binaryParser="org.eclipse.cdt.core.PE;org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.exe.debug.250946113" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
+                            							
+                            <builder buildPath="${workspace_loc:/Lenet_HLS_Final}/Debug" id="cdt.managedbuild.target.gnu.builder.exe.debug.1036386591" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.archiver.base.127653040" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2055684277" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
+                                								
+                                <option id="gnu.cpp.compiler.exe.debug.option.optimization.level.176747684" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+                                								
+                                <option id="gnu.cpp.compiler.exe.debug.option.debugging.level.960094090" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="gnu.cpp.compiler.option.include.paths.980491307" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.preprocessor.def.696109932" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="AESL_TB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__llvm__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__llvm__"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1475766601" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1650386409" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.823631653" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.exe.debug.option.debugging.level.1784018483" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.option.include.paths.1061167505" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.c.compiler.option.preprocessor.def.symbols.193831385" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="AESL_TB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__llvm__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__llvm__"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.450512813" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.422923094" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug">
+                                								
+                                <option id="gnu.c.link.option.paths.1194347206" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.c.link.option.libs.1355915130" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+                                								
+                                <option id="gnu.c.link.option.ldflags.2131688935" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.2062285954" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
+                                								
+                                <option id="gnu.cpp.link.option.paths.942792432" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.libs.145793141" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+                                								
+                                <option id="gnu.cpp.link.option.flags.1422473441" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1709437788" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1685910977" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.2112162005" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.973975737" name="test_image_bin_09.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_09.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1427306463" name="test_image_bin_25.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_25.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.622743760" name="test_image_bin_50.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_50.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.887408506" name="test_image_bin_34.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_34.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.329528837" name="test_image_bin_26.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_26.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1818288625" name="test_image_bin_08.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_08.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.203628415" name="test_image_bin_43.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_43.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1189106101" name="test_image_bin_00.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_00.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.2145750117" name="test_image_bin_41.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_41.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.523605079" name="test_image_bin_17.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_17.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.47934043" name="test_image_bin_35.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_35.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.2093091821" name="test_image_bin_44.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_44.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.403095967" name="test_image_bin_27.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_27.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1146795341" name="test_image_bin_18.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_18.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1970938591" name="test_image_bin_01.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_01.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1281849735" name="test_image_bin_40.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_40.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1330326134" name="test_image_bin_28.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_28.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.418286986" name="test_image_bin_02.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_02.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1856971901" name="test_image_bin_45.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_45.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.87786888" name="test_image_bin_32.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_32.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1769289583" name="test_image_bin_52.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_52.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1707733122" name="test_image_bin_15.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_15.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1116738272" name="test_image_bin_58.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_58.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1941869732" name="test_image_bin_59.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_59.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.502969371" name="test_image_bin_29.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_29.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.841255947" name="test_image_bin_46.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_46.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1399617603" name="test_image_bin_51.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_51.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.573445871" name="test_image_bin_20.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_20.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1033783293" name="test_image_bin_33.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_33.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1373888414" name="test_image_bin_16.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_16.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.713818748" name="test_image_bin_03.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_03.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1215505337" name="test_image_bin_47.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_47.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1094614640" name="test_image_bin_12.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_12.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1179237344" name="test_image_bin_39.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_39.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.901959396" name="test_image_bin_64.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_64.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.172108628" name="test_image_bin_21.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_21.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1928424768" name="test_image_bin_63.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_63.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.122410272" name="test_image_bin_13.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_13.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.962573115" name="test_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/test_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2055684277.2084369920">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2055684277.2084369920" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2055684277">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.150172" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1940862647" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="D:/ADAM_GALLAS/materials/01_Vivado_HLS/Lenet_HLS_Final"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1276817916" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1903491008" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1846845959" name="test_image_bin_04.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_04.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.311461735" name="test_image_bin_56.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_56.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1027366636" name="test_image_bin_05.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_05.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.735865760" name="test_image_bin_48.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_48.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.649674644" name="test_image_bin_62.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_62.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.753047236" name="test_image_bin_22.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_22.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.906355878" name="test_image_bin_14.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_14.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.2118096092" name="test_image_bin_31.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_31.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1126251246" name="test_image_bin_57.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_57.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.169838455" name="test_image_bin_23.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_23.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.693432091" name="test_image_bin_53.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_53.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.603404987" name="test_image_bin_10.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_10.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1757955093" name="test_image_bin_49.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_49.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.261279534" name="test_image_bin_61.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_61.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.2013469828" name="test_image_bin_36.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_36.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.25670893" name="test_image_bin_19.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_19.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.921959679" name="test_image_bin_06.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_06.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.443193209" name="test_image_bin_11.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_11.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.307326951" name="test_image_bin_54.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_54.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1502181640" name="test_image_bin_30.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_30.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1035058762" name="test_image_bin_60.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_60.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1813867025" name="test_image_bin_24.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_24.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1432994864" name="test_image_bin_37.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_37.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1445603812" name="test_image_bin_38.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_38.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.1757721100" name="test_image_bin_07.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_07.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.933178436" name="test_image_bin_55.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_55.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1912530946.249468940" name="test_image_bin_42.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_42.bin" toolsToInvoke=""/>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="conv_optimization|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="cdt.managedbuild.config.gnu.exe.release.1712990555">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.release.1712990555" moduleId="org.eclipse.cdt.core.settings" name="Release">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="a.exe" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.release.1712990555" name="Release" parent="cdt.managedbuild.config.gnu.exe.release">
+                    					
+                    <folderInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555." name="/" resourcePath="">
+                        						
+                        <toolChain id="cdt.managedbuild.toolchain.gnu.exe.release.1768140600" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.release">
+                            							
+                            <targetPlatform binaryParser="org.eclipse.cdt.core.PE;org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.exe.release.990665307" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.release"/>
+                            							
+                            <builder buildPath="${workspace_loc:/Lenet_HLS_Final}/Release" id="cdt.managedbuild.target.gnu.builder.exe.release.323624660" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.release"/>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.archiver.base.1865770003" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.109760139" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release">
+                                								
+                                <option id="gnu.cpp.compiler.exe.release.option.optimization.level.827273748" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+                                								
+                                <option id="gnu.cpp.compiler.exe.release.option.debugging.level.442344863" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+                                								
+                                <option id="gnu.cpp.compiler.option.include.paths.89861692" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.540823508" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1168428929" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
+                                								
+                                <option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.1625849430" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.exe.release.option.debugging.level.887042392" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                								
+                                <option id="gnu.c.compiler.option.include.paths.633564098" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1613781015" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.541534278" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release">
+                                								
+                                <option id="gnu.c.link.option.paths.71684235" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.c.link.option.libs.1224837620" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+                                								
+                                <option id="gnu.c.link.option.ldflags.812656928" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.1329429455" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
+                                								
+                                <option id="gnu.cpp.link.option.paths.1865747826" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/lib"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.link.option.libs.1953684245" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+                                								
+                                <option id="gnu.cpp.link.option.flags.1495750027" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.409317079" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            							
+                            <tool id="cdt.managedbuild.tool.gnu.assembler.exe.release.1601572399" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.release">
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.1748346016" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.712561401" name="test_image_bin_09.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_09.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.808398379" name="test_image_bin_25.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_25.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1319706245" name="test_image_bin_50.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_50.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.429529538" name="test_image_bin_34.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_34.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1310577340" name="test_image_bin_26.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_26.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.395022130" name="test_image_bin_08.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_08.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.689549087" name="test_image_bin_43.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_43.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1731139764" name="test_image_bin_00.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_00.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1060519489" name="test_image_bin_41.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_41.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1418759820" name="test_image_bin_17.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_17.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.130937182" name="test_image_bin_35.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_35.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.163159230" name="test_image_bin_44.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_44.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.236934315" name="test_image_bin_27.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_27.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.478052272" name="test_image_bin_18.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_18.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.2006093221" name="test_image_bin_01.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_01.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1484853579" name="test_image_bin_40.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_40.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1125257874" name="test_image_bin_28.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_28.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.2002822448" name="test_image_bin_02.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_02.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.596574261" name="test_image_bin_45.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_45.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.696415291" name="test_image_bin_32.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_32.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1102446967" name="test_image_bin_52.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_52.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.90349570" name="test_image_bin_15.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_15.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1057348753" name="test_image_bin_58.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_58.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.855186421" name="test_image_bin_59.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_59.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.844482287" name="test_image_bin_29.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_29.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.770385917" name="test_image_bin_46.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_46.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.75362900" name="test_image_bin_51.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_51.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.187197592" name="test_image_bin_20.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_20.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.526051522" name="test_image_bin_33.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_33.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.2110314519" name="test_image_bin_16.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_16.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.941604100" name="test_image_bin_03.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_03.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.374323964" name="test_image_bin_47.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_47.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.788782178" name="test_image_bin_12.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_12.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.162446023" name="test_image_bin_39.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_39.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.128177157" name="test_image_bin_64.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_64.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1606777329" name="test_image_bin_21.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_21.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1200787348" name="test_image_bin_63.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_63.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.127020436" name="test_image_bin_13.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_13.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.436958407" name="test_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/test_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.109760139.372225651">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.109760139.372225651" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.109760139">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.2021439868" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option id="gnu.cpp.compiler.option.include.paths.1465424304" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="D:/ADAM_GALLAS/materials/01_Vivado_HLS/Lenet_HLS_Final"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Program_Files/Xilinx/Vivado/2019.2/include/ap_sysc"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.127155879" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2057947862" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1547068237" name="test_image_bin_04.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_04.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.544223351" name="test_image_bin_56.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_56.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1425723650" name="test_image_bin_05.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_05.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1510467646" name="test_image_bin_48.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_48.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.650133100" name="test_image_bin_62.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_62.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1364050516" name="test_image_bin_22.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_22.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1801856999" name="test_image_bin_14.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_14.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1848766044" name="test_image_bin_31.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_31.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.62420888" name="test_image_bin_57.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_57.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.2067164765" name="test_image_bin_23.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_23.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.923368777" name="test_image_bin_53.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_53.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1831046306" name="test_image_bin_10.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_10.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.931415293" name="test_image_bin_49.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_49.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.413646512" name="test_image_bin_61.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_61.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.257890438" name="test_image_bin_36.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_36.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1505087269" name="test_image_bin_19.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_19.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.83136325" name="test_image_bin_06.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_06.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1459008198" name="test_image_bin_11.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_11.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1482290433" name="test_image_bin_54.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_54.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.196945043" name="test_image_bin_30.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_30.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.69358839" name="test_image_bin_60.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_60.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1325964939" name="test_image_bin_24.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_24.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1601293961" name="test_image_bin_37.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_37.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.1298301994" name="test_image_bin_38.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_38.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.302216181" name="test_image_bin_07.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_07.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.172069555" name="test_image_bin_55.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_55.bin" toolsToInvoke=""/>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1712990555.255190587" name="test_image_bin_42.bin" rcbsApplicability="disable" resourcePath="testbench/test_image_bin_42.bin" toolsToInvoke=""/>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="conv_optimization|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="Lenet_HLS_Final.cdt.managedbuild.target.gnu.exe.1994416369" name="Executable" projectType="cdt.managedbuild.target.gnu.exe"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1712990555;cdt.managedbuild.config.gnu.exe.release.1712990555.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.1168428929;cdt.managedbuild.tool.gnu.c.compiler.input.1613781015">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.1912530946;cdt.managedbuild.config.gnu.exe.debug.1912530946.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2055684277;cdt.managedbuild.tool.gnu.cpp.compiler.input.1475766601">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.1912530946;cdt.managedbuild.config.gnu.exe.debug.1912530946.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1650386409;cdt.managedbuild.tool.gnu.c.compiler.input.450512813">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1712990555;cdt.managedbuild.config.gnu.exe.release.1712990555.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.109760139;cdt.managedbuild.tool.gnu.cpp.compiler.input.540823508">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    
+</cproject>

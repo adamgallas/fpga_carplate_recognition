@@ -1,0 +1,173 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Fullc1_Cal'" level="0">
+<item name = "Date">Wed Aug 19 09:56:55 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">Lenet_HLS_Final</item>
+<item name = "Solution">conv_optimization</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.552 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">168841, 212185, 1.688 ms, 2.122 ms, 168841, 212185, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_my_tanh_fu_165">my_tanh, 5, 521, 50.000 ns, 5.210 us, 5, 521, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- FULL1_LEN2">168840, 212184, 2010 ~ 2526, -, -, 84, no</column>
+<column name=" + FULL1_LEN1">2000, 2000, 5, -, -, 400, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, 1, -, -, -</column>
+<column name="Expression">-, -, 0, 212, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">2, 0, 543, 1495, -</column>
+<column name="Memory">24, -, 3, 4, -</column>
+<column name="Multiplexer">-, -, -, 110, -</column>
+<column name="Register">-, -, 157, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">9, ~0, ~0, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_my_tanh_fu_165">my_tanh, 2, 0, 543, 1495, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="Lenet_HLS_mul_mulibs_U23">Lenet_HLS_mul_mulibs, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="bias1_V_U">Fullc1_Cal_bias1_V, 0, 3, 4, 0, 84, 3, 1, 252</column>
+<column name="weight1_V_U">Fullc1_Cal_weighthbi, 24, 0, 0, 0, 33600, 6, 1, 201600</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1116_fu_230_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln1192_2_fu_270_p2">+, 0, 0, 25, 18, 18</column>
+<column name="add_ln177_fu_180_p2">+, 0, 0, 23, 16, 9</column>
+<column name="i_fu_192_p2">+, 0, 0, 15, 7, 1</column>
+<column name="j_fu_215_p2">+, 0, 0, 15, 9, 1</column>
+<column name="p_Val2_14_fu_329_p2">+, 0, 0, 12, 12, 12</column>
+<column name="ret_V_fu_265_p2">+, 0, 0, 26, 19, 19</column>
+<column name="and_ln415_fu_319_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln781_fu_410_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln786_fu_440_p2">and, 0, 0, 2, 1, 1</column>
+<column name="carry_2_fu_350_p2">and, 0, 0, 2, 1, 1</column>
+<column name="deleted_ones_fu_404_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_fu_434_p2">and, 0, 0, 2, 1, 1</column>
+<column name="underflow_fu_458_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln177_fu_186_p2">icmp, 0, 0, 11, 7, 7</column>
+<column name="icmp_ln180_fu_209_p2">icmp, 0, 0, 13, 9, 8</column>
+<column name="r_1_fu_293_p2">icmp, 0, 0, 11, 5, 1</column>
+<column name="or_ln340_fu_464_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln416_2_fu_392_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln416_fu_398_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln785_fu_422_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln786_fu_446_p2">or, 0, 0, 2, 1, 1</column>
+<column name="r_fu_306_p2">or, 0, 0, 2, 1, 1</column>
+<column name="xor_ln416_3_fu_344_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln416_4_fu_386_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln779_fu_380_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln785_2_fu_428_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln785_fu_416_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln786_fu_452_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">50, 11, 1, 11</column>
+<column name="flatten2_V_d0">33, 6, 12, 72</column>
+<column name="i_0_reg_131">9, 2, 7, 14</column>
+<column name="j_0_reg_154">9, 2, 9, 18</column>
+<column name="phi_mul_reg_142">9, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln177_reg_483">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="flatten1_V_load_reg_529">12, 0, 12, 0</column>
+<column name="flatten2_V_addr_reg_501">7, 0, 7, 0</column>
+<column name="grp_my_tanh_fu_165_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_reg_131">7, 0, 7, 0</column>
+<column name="i_reg_491">7, 0, 7, 0</column>
+<column name="j_0_reg_154">9, 0, 9, 0</column>
+<column name="j_reg_509">9, 0, 9, 0</column>
+<column name="or_ln340_reg_558">1, 0, 1, 0</column>
+<column name="overflow_reg_550">1, 0, 1, 0</column>
+<column name="phi_mul_reg_142">16, 0, 16, 0</column>
+<column name="r_V_reg_534">19, 0, 19, 0</column>
+<column name="reg_175">12, 0, 12, 0</column>
+<column name="trunc_ln1192_reg_540">18, 0, 18, 0</column>
+<column name="trunc_ln718_reg_545">5, 0, 5, 0</column>
+<column name="underflow_reg_554">1, 0, 1, 0</column>
+<column name="weight1_V_load_reg_524">6, 0, 6, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Fullc1_Cal, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Fullc1_Cal, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Fullc1_Cal, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Fullc1_Cal, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Fullc1_Cal, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Fullc1_Cal, return value</column>
+<column name="flatten2_V_address0">out, 7, ap_memory, flatten2_V, array</column>
+<column name="flatten2_V_ce0">out, 1, ap_memory, flatten2_V, array</column>
+<column name="flatten2_V_we0">out, 1, ap_memory, flatten2_V, array</column>
+<column name="flatten2_V_d0">out, 12, ap_memory, flatten2_V, array</column>
+<column name="flatten2_V_q0">in, 12, ap_memory, flatten2_V, array</column>
+<column name="flatten1_V_address0">out, 9, ap_memory, flatten1_V, array</column>
+<column name="flatten1_V_ce0">out, 1, ap_memory, flatten1_V, array</column>
+<column name="flatten1_V_q0">in, 12, ap_memory, flatten1_V, array</column>
+</table>
+</item>
+</section>
+</profile>
